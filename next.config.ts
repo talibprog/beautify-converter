@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'standalone',
-  turbopack: {}, 
+  turbopack: {},
   webpack: (config) => {
     config.resolve.alias.canvas = false;
     return config;
