@@ -182,6 +182,13 @@ export const TOOLS: Tool[] = [
     category: "Beautifiers & Minifiers",
     description: "Compress SQL statements by removing unnecessary comments, line breaks, and whitespace intervals.",
   },
+  {
+    id: "image-to-prompt",
+    name: "Image to Prompt Generator",
+    slug: "image-to-prompt",
+    category: "AI & Multimedia Tools",
+    description: "Upload any image and generate detailed Midjourney, DALL-E 3, and Stable Diffusion prompts instantly.",
+  },
 ];
 
 // DYNAMIC CATEGORIES: Jo bhi category TOOLS array me hogi, auto-extract ho jayegi

@@ -27,6 +27,7 @@ import OpmlBeautifier from '@/components/OpmlBeautifier';
 import OpmlMinifier from '@/components/OpmlMinifier';
 import SqlBeautifier from '@/components/SqlBeautifier';
 import SqlMinifier from '@/components/SqlMinifier';
+import ImageToPrompt from '@/components/ImageToPrompt';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -55,6 +56,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'opml-minifier': OpmlMinifier,
   'sql-beautifier': SqlBeautifier,
   'sql-minifier': SqlMinifier,
+  'image-to-prompt': ImageToPrompt,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

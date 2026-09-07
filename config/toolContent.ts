@@ -1505,5 +1505,61 @@ Unlike traditional web services that process your sensitive data through remote 
 
   Minifying SQL queries condenses multi-line database commands into compact single-line strings. This process eliminates comments and spaces around operators without affecting the actual database query execution.`
  },
+ 'image-to-prompt': {
+  title: 'Free Online AI Image to Prompt Generator',
+  introduction: `Convert any uploaded image into a highly detailed text prompt for Midjourney v6, DALL-E 3, and Stable Diffusion. Powered by Google Gemini Vision AI, this tool reverse-engineers image aesthetics, lighting, lens types, and artistic styles into copy-pasteable text prompts.`,
+
+  features: [
+    {
+      title: 'Vision AI Analysis',
+      description: 'Leverages Gemini 1.5 Vision to accurately detect subjects, artistic medium, color palettes, and framing.'
+    },
+    {
+      title: 'Multi-Model Compatibility',
+      description: 'Generates structured prompts optimized for Midjourney, Stable Diffusion XL, and DALL-E 3.'
+    },
+    {
+      title: 'Instant One-Click Copy',
+      description: 'Quickly copy the generated prompt directly to your clipboard for instant creation.'
+    },
+    {
+      title: 'Privacy-First Handling',
+      description: 'Uploaded image bytes process directly via secure API endpoints without permanent cloud storage.'
+    }
+  ],
+
+  howToUse: [
+    'Upload or drag & drop a PNG, JPG, or WEBP image file.',
+    'Preview the uploaded image to confirm selection.',
+    'Click "Generate AI Prompt" to trigger vision analysis.',
+    'Copy the generated detailed prompt text to use in your favorite AI image generator.'
+  ],
+
+  useCases: [
+    {
+      title: 'Replicating Art Styles',
+      description: 'Extract exact color palettes, lighting styles, and artistic mediums from reference images.'
+    },
+    {
+      title: 'AI Prompt Engineering',
+      description: 'Learn how professional image prompts are structured by analyzing visual inputs.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Which AI models accept the generated prompts?',
+      answer: 'The output is formatted to work seamlessly across Midjourney v6, DALL-E 3, Stable Diffusion, and Leonardo AI.'
+    },
+    {
+      question: 'Are my uploaded images stored on your server?',
+      answer: 'No. Images are processed temporarily for prompt generation and are never saved or stored.'
+    }
+  ],
+
+  detailedGuide: `Understanding Image-to-Prompt Reverse Engineering
+
+  Image-to-Prompt conversion uses advanced computer vision to break down visual elements into descriptive natural language tokens. By identifying key components such as subject matter, lighting, camera angles, textures, and artistic movement, the tool recreates the precise text query required to reproduce similar visual outputs.`
+ },
 };
 
