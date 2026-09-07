@@ -23,6 +23,10 @@ import JsObfuscator from '@/components/JsObfuscator';
 import JsonMinifier from '@/components/JsonMinifier';
 import XmlBeautifier from '@/components/XmlBeautifier';
 import XmlMinifier from '@/components/XmlMinifier';
+import OpmlBeautifier from '@/components/OpmlBeautifier';
+import OpmlMinifier from '@/components/OpmlMinifier';
+import SqlBeautifier from '@/components/SqlBeautifier';
+import SqlMinifier from '@/components/SqlMinifier';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -47,6 +51,10 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'json-minifier': JsonMinifier,
   'xml-beautifier': XmlBeautifier,
   'xml-minifier': XmlMinifier,
+  'opml-beautifier': OpmlBeautifier,
+  'opml-minifier': OpmlMinifier,
+  'sql-beautifier': SqlBeautifier,
+  'sql-minifier': SqlMinifier,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

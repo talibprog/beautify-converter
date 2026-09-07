@@ -1279,5 +1279,231 @@ Unlike traditional web services that process your sensitive data through remote 
 
   Minifying XML files strips extra indentation and whitespace between tags. This reduces bandwidth usage when transmitting large XML sitemaps, config files, or web service feeds over HTTP.`
  },
+ 'opml-beautifier': {
+  title: 'Free Online OPML Beautifier & Formatter',
+  introduction: `Format, beautify, and validate OPML (Outline Processor Markup Language) files online. OPML is an XML format commonly used to export and import RSS feed subscriptions, podcasts, and outline structures across readers.
+
+  Our OPML Beautifier cleans messy or minified OPML markup by applying structural tree indentation and validating node tags directly inside your browser.`,
+
+  features: [
+    {
+      title: 'Structural Indentation',
+      description: 'Formats OPML outline elements into clean, easy-to-read tag hierarchies.'
+    },
+    {
+      title: 'XML & OPML Validation',
+      description: 'Checks for broken tags and missing markup before rendering formatted outputs.'
+    },
+    {
+      title: 'Minification Support',
+      description: 'Compresses OPML documents into single-line strings when needed.'
+    },
+    {
+      title: 'Client-Side Privacy',
+      description: 'Executes parsing locally in browser memory without sending feed data to remote servers.'
+    }
+  ],
+
+  howToUse: [
+    'Paste raw OPML or RSS outline markup into the left input box.',
+    'Click "Beautify OPML" to auto-format nested tags and indentation.',
+    'Review the structured output in the right column.',
+    'Click "Copy Result" or "Download" to export your formatted .opml file.'
+  ],
+
+  useCases: [
+    {
+      title: 'RSS & Feed Reader Exports',
+      description: 'Clean up subscription lists exported from Feedly, Inoreader, or NetNewsWire.'
+    },
+    {
+      title: 'Mind Map & Outline Processing',
+      description: 'Format complex outlines created with mind-mapping software that use OPML formats.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'What is an OPML file?',
+      answer: 'OPML stands for Outline Processor Markup Language. It is an XML dialect used to exchange structured outline data such as RSS subscriptions and podcast feeds.'
+    },
+    {
+      question: 'Will formatting change my feed URLs?',
+      answer: 'No. The beautification process only adjusts structural spacing and line breaks without modifying tag attributes or URLs.'
+    }
+  ],
+
+  detailedGuide: `Understanding OPML Formatting
+
+  OPML files rely on XML schema definitions. Proper tag indentation makes it easier to inspect feed URLs, outline attributes, and nested categories when transferring subscription data between different feed aggregator services.`
+ },
+ 'opml-minifier': {
+  title: 'Free Online OPML Minifier & Compressor',
+  introduction: `Compress OPML markup by stripping unnecessary whitespace, comments, and line breaks. Our OPML Minifier reduces file sizes for faster transfers and efficient storage of RSS feed subscription outlines.`,
+
+  features: [
+    {
+      title: 'Whitespace Removal',
+      description: 'Strips out extra spaces, indentation, and newlines between outline tags.'
+    },
+    {
+      title: 'Syntax Validation',
+      description: 'Verifies OPML/XML tag integrity before compressing to prevent broken output.'
+    },
+    {
+      title: 'Beautify Option',
+      description: 'Convert compressed OPML back into formatted, human-readable layout anytime.'
+    },
+    {
+      title: '100% Client-Side Processing',
+      description: 'Your RSS feeds and outline data remain secure inside your browser.'
+    }
+  ],
+
+  howToUse: [
+    'Paste OPML markup into the left input area.',
+    'Click "Minify OPML" to compress indentation and line breaks.',
+    'View the optimized single-line OPML string in the right box.',
+    'Click "Copy Result" or "Download" to save your file.'
+  ],
+
+  useCases: [
+    {
+      title: 'Feed Data Export Optimization',
+      description: 'Reduce storage overhead when storing large OPML subscription backups.'
+    },
+    {
+      title: 'Bandwidth Reduction',
+      description: 'Minimize payload sizes when sharing feed list files across networks.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will minifying an OPML file remove my RSS URLs?',
+      answer: 'No. Minification only removes structural whitespace and comments. All outline node attributes and URLs remain untouched.'
+    },
+    {
+      question: 'Is my OPML data saved on any server?',
+      answer: 'No. All minification takes place client-side in your local browser.'
+    }
+  ],
+
+  detailedGuide: `Understanding OPML Minification
+
+  OPML (Outline Processor Markup Language) files are XML-based formats used primarily for RSS subscriptions and outline exports. Minifying OPML files removes unused indentation, saving bytes and accelerating automated XML parsing operations.`
+ },
+ 'sql-beautifier': {
+  title: 'Free Online SQL Beautifier & Formatter',
+  introduction: `Format, structure, and clean up SQL statements online. Our SQL Beautifier turns unformatted or complex queries into neatly aligned, readable SQL code with uppercase standard keywords.`,
+
+  features: [
+    {
+      title: 'Keyword Capitalization',
+      description: 'Automatically converts standard keywords like SELECT, FROM, WHERE, and JOIN to uppercase.'
+    },
+    {
+      title: 'Clause Alignment',
+      description: 'Breaks long SQL statements across dedicated lines for easier visual debugging.'
+    },
+    {
+      title: 'SQL Minification',
+      description: 'Removes inline comments and redundant spacing to compress queries.'
+    },
+    {
+      title: 'Client-Side Execution',
+      description: 'All processing takes place locally inside your browser for complete data safety.'
+    }
+  ],
+
+  howToUse: [
+    'Paste unformatted SQL code into the left text box.',
+    'Click "Beautify SQL" to structure clauses and uppercase keywords.',
+    'Inspect the formatted query in the output box.',
+    'Click "Copy Result" or "Download" to save your SQL script.'
+  ],
+
+  useCases: [
+    {
+      title: 'Database Query Optimization',
+      description: 'Easily read and analyze complex nested queries or database migration scripts.'
+    },
+    {
+      title: 'Code Documentation',
+      description: 'Format raw SQL strings before adding them into code repositories or docs.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Does this tool support dialect-specific SQL keywords?',
+      answer: 'Yes. It handles core SQL keywords common across MySQL, PostgreSQL, SQLite, and MS SQL Server.'
+    },
+    {
+      question: 'Is my SQL query uploaded to a database server?',
+      answer: 'No. The formatting script runs entirely in your client-side browser.'
+    }
+  ],
+
+  detailedGuide: `Understanding SQL Formatting
+
+  Unformatted SQL queries can be difficult to audit, especially when dealing with multiple JOIN operations or subqueries. Formatting standardizes keyword capitalization and line indentation, speeding up debugging and collaboration.`
+ },
+ 'sql-minifier': {
+  title: 'Free Online SQL Minifier & Compressor',
+  introduction: `Compress SQL queries by stripping out inline comments, block comments, redundant spaces, and newlines. Our SQL Minifier compresses SQL scripts into single-line statements for efficient database execution and embedding in application source code.`,
+
+  features: [
+    {
+      title: 'Comment Stripping',
+      description: 'Removes both single-line (-- comment) and block (/* comment */) annotations.'
+    },
+    {
+      title: 'Operator Space Removal',
+      description: 'Strips unnecessary whitespace around mathematical operators and commas.'
+    },
+    {
+      title: 'Beautify Support',
+      description: 'Easily uncompress and format single-line SQL queries back into structured layouts.'
+    },
+    {
+      title: 'Browser-Based Security',
+      description: '100% client-side compression prevents sensitive table names and queries from leaving your device.'
+    }
+  ],
+
+  howToUse: [
+    'Paste raw SQL queries into the left textarea.',
+    'Click "Minify SQL" to strip whitespace and comments.',
+    'Inspect the compressed single-line output in the right column.',
+    'Click "Copy Result" or "Download" to save your compressed SQL string.'
+  ],
+
+  useCases: [
+    {
+      title: 'Application Code Embedding',
+      description: 'Embed clean, single-line SQL queries directly into Node.js, Python, or PHP codebases.'
+    },
+    {
+      title: 'Payload Size Reduction',
+      description: 'Reduce query string overhead when transmitting database instructions over REST APIs.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Does SQL minification alter table or column names?',
+      answer: 'No. Minification strictly targets comments and non-essential whitespace, keeping all identifiers intact.'
+    },
+    {
+      question: 'Is my SQL query saved anywhere?',
+      answer: 'No. All operations run strictly inside your client-side browser.'
+    }
+  ],
+
+  detailedGuide: `Understanding SQL Minification
+
+  Minifying SQL queries condenses multi-line database commands into compact single-line strings. This process eliminates comments and spaces around operators without affecting the actual database query execution.`
+ },
 };
 

@@ -154,6 +154,34 @@ export const TOOLS: Tool[] = [
     category: "Beautifiers & Minifiers",
     description: "Compress XML files by stripping whitespace, comments, and line breaks to decrease payload sizes.",
   },
+  {
+    id: "opml-beautifier",
+    name: "OPML Beautifier",
+    slug: "opml-beautifier",
+    category: "Beautifiers & Minifiers",
+    description: "Format, indent, and validate unorganized OPML outline structures to make RSS feed exports human-readable.",
+  },
+  {
+    id: "opml-minifier",
+    name: "OPML Minifier",
+    slug: "opml-minifier",
+    category: "Beautifiers & Minifiers",
+    description: "Compress OPML files by stripping whitespace, comments, and line breaks to decrease payload sizes.",
+  },
+  {
+    id: "sql-beautifier",
+    name: "SQL Beautifier",
+    slug: "sql-beautifier",
+    category: "Beautifiers & Minifiers",
+    description: "Format, capitalize keywords, and structure raw SQL queries for improved readability and debugging.",
+  },
+  {
+    id: "sql-minifier",
+    name: "SQL Minifier",
+    slug: "sql-minifier",
+    category: "Beautifiers & Minifiers",
+    description: "Compress SQL statements by removing unnecessary comments, line breaks, and whitespace intervals.",
+  },
 ];
 
 // DYNAMIC CATEGORIES: Jo bhi category TOOLS array me hogi, auto-extract ho jayegi
