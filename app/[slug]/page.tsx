@@ -1,16 +1,28 @@
 import { TOOLS } from '@/config/tools';
 import { TOOL_SEO_CONTENT } from '@/config/toolContent';
 import { notFound } from 'next/navigation';
-import JsonBeautifier from '@/components/tools/JsonBeautifier';
+import JsonBeautifier from '@/components/JsonBeautifier';
 import CategoryToolLinks from '@/components/CategoryToolLinks'; 
-import CsvToJson from '@/components/tools/CsvToJson';
-import CssMinifier from '@/components/tools/CssMinifier';
-import Base64Tool from '@/components/tools/Base64Tool';
-import SipCalculator from '@/components/tools/SipCalculator';
-import JsonValidator from '@/components/tools/JsonValidator';
-import JsBeautifier from '@/components/tools/JsBeautifier';
-import CsvToHtmlTable from '@/components/tools/CsvToHtmlTable';
-import PngToJpg from '@/components/tools/PngToJpg';
+import CsvToJson from '@/components/CsvToJson';
+import CssMinifier from '@/components/CssMinifier';
+import Base64Tool from '@/components/Base64Tool';
+import SipCalculator from '@/components/SipCalculator';
+import JsonValidator from '@/components/JsonValidator';
+import JsBeautifier from '@/components/JsBeautifier';
+import CsvToHtmlTable from '@/components/CsvToHtmlTable';
+import PngToJpg from '@/components/PngToJpg';
+import MyIpFinder from '@/components/MyIpFinder';
+import DnsLookup from '@/components/DnsLookup';
+import DomainAgeChecker from '@/components/DomainAgeChecker';
+import IpSubnetCalculator from '@/components/IpSubnetCalculator';
+import SslChecker from '@/components/SslChecker';
+import HtmlMinifier from '@/components/HtmlMinifier';
+import HtmlBeautifier from '@/components/HtmlBeautifier';
+import JsMinifier from '@/components/JsMinifier';
+import JsObfuscator from '@/components/JsObfuscator';
+import JsonMinifier from '@/components/JsonMinifier';
+import XmlBeautifier from '@/components/XmlBeautifier';
+import XmlMinifier from '@/components/XmlMinifier';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -23,6 +35,18 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'js-beautifier': JsBeautifier,
   'csv-to-html-table': CsvToHtmlTable,
   'png-to-jpg-converter': PngToJpg,
+  'my-ip-finder': MyIpFinder,
+  'dns-lookup': DnsLookup,
+  'domain-age-checker': DomainAgeChecker,
+  'ip-subnet-calculator': IpSubnetCalculator,
+  'ssl-checker': SslChecker,
+  'html-minifier': HtmlMinifier,
+  'html-beautifier': HtmlBeautifier,
+  'javascript-minifier': JsMinifier,
+  'javascript-obfuscator': JsObfuscator,
+  'json-minifier': JsonMinifier,
+  'xml-beautifier': XmlBeautifier,
+  'xml-minifier': XmlMinifier,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

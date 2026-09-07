@@ -30,7 +30,7 @@ export default function CategoryToolLinks({ currentSlug }: { currentSlug?: strin
                   return (
                     <li key={tool.id}>
                       <Link
-                        href={`/tools/${tool.slug}`}
+                        href={`/${tool.slug}`}
                         className={`text-sm block transition-colors ${
                           isActive
                             ? 'text-blue-600 font-bold pointer-events-none'

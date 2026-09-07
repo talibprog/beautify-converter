@@ -589,5 +589,695 @@ Unlike traditional web services that process your sensitive data through remote 
 
     PNG (Portable Network Graphics) uses lossless compression which preserves every detail, but produces larger file sizes. JPG (Joint Photographic Experts Group) uses lossy compression optimized for digital photography and web graphics, resulting in significantly smaller file sizes without noticeable visual degradation.`
   },
+    'my-ip-finder': {
+    title: 'Free Online Public IP Address Finder',
+    introduction: `Every device connected to the internet relies on a unique Public IP address to send and receive data packets across global networks.
+
+    Our free My IP Address Finder tool detects your active IPv4/IPv6 address instantly, revealing your ISP organization, geographic region, and network details without storing any personal log data.`,
+
+    features: [
+        {
+        title: 'Instant IP Detection',
+        description: 'Fetches your public IPv4/IPv6 address automatically upon loading the page.'
+        },
+        {
+        title: 'Network & ISP Insights',
+        description: 'Displays provider information including Autonomous System Organization (ISP) details.'
+        },
+        {
+        title: 'Geographic Location Lookup',
+        description: 'Shows estimated city, region, country, and postal code associated with your current route.'
+        },
+        {
+        title: '100% Private & Client-Side',
+        description: 'Your IP lookup queries run securely and are never stored or tracked in database logs.'
+        }
+    ],
+
+    howToUse: [
+        'Open the My IP Address Finder tool page in your web browser.',
+        'View your public IP address displayed clearly in the primary highlighted field.',
+        'Check location details, ISP name, and postal codes in the network summary card.',
+        'Click the "Copy IP" button to store your address directly to your clipboard.'
+    ],
+
+    useCases: [
+        {
+        title: 'Network Troubleshooting',
+        description: 'Verify router status, remote desktop connections, or server firewall access rules.'
+        },
+        {
+        title: 'VPN & Proxy Verification',
+        description: 'Confirm if your VPN tunnel is active and masking your real ISP location properly.'
+        }
+    ],
+
+    faq: [
+        {
+        question: 'Is my exact home location exposed through my IP address?',
+        answer: 'No. IP geolocation provides city or region-level data corresponding to your ISP access node, not your precise home street address.'
+        },
+        {
+        question: 'Why does my IP address change periodically?',
+        answer: 'Most internet service providers assign dynamic IP addresses that refresh whenever your modem restarts or connection leases renew.'
+        }
+    ],
+
+    detailedGuide: `Understanding Public IP Addresses
+
+    A Public IP address serves as your digital mailing address on the internet. Assigned by your Internet Service Provider (ISP), it enables web servers to deliver web pages, streams, and files back to your device. Monitoring your public IP helps debug network latency, set up white-listed IP access for servers, and confirm virtual network protection.`
+   },
+   'dns-lookup': {
+  title: 'Free Online DNS Lookup Tool',
+  introduction: `Domain Name System (DNS) records map human-readable domain names to server IP addresses and handle routing for emails, security verifications, and subdomains.
+
+  Our free DNS Lookup Tool queries global DNS resolvers directly from your browser, allowing you to instantly inspect A, AAAA, MX, TXT, NS, and CNAME records.`,
+
+  features: [
+    {
+      title: 'Multi-Record Type Support',
+      description: 'Query standard DNS records including IPv4 (A), IPv6 (AAAA), Mail Exchange (MX), Text (TXT), and Name Servers (NS).'
+    },
+    {
+      title: 'Real-Time Resolution',
+      description: 'Fetches live responses directly from Google DNS over HTTPS resolvers.'
+    },
+    {
+      title: 'Detailed TTL Insights',
+      description: 'Displays Time-To-Live (TTL) values for accurate DNS propagation tracking.'
+    },
+    {
+      title: 'Clean Tabular View',
+      description: 'Formats complex record data into an easily readable and copyable table structure.'
+    }
+  ],
+
+  howToUse: [
+    'Enter the target domain name into the input field (e.g. google.com).',
+    'Select the specific DNS record type you wish to inspect from the dropdown list.',
+    'Click the "Lookup DNS" button to execute the query.',
+    'Review the returned records, TTL durations, and server IP values in the output table.'
+  ],
+
+  useCases: [
+    {
+      title: 'Domain Migration & TTL Checks',
+      description: 'Verify if your updated A or CNAME records have propagated globally after changing web hosts.'
+    },
+    {
+      title: 'Email Security Verification',
+      description: 'Check SPF, DKIM, or DMARC authentication policies configured inside TXT records.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Why are my updated DNS records not showing up yet?',
+      answer: 'DNS changes depend on TTL settings set by your domain registrar and can take anywhere from a few minutes up to 48 hours to propagate fully.'
+    },
+    {
+      question: 'What is the difference between A and CNAME records?',
+      answer: 'An A record maps a domain directly to an IPv4 address, while a CNAME record aliases a domain name to another canonical domain name.'
+    }
+  ],
+
+  detailedGuide: `Understanding DNS Record Types
+
+  DNS acts as the phonebook of the internet. Key record types include A records (IPv4 routing), AAAA records (IPv6 routing), MX records (mail server routing), and TXT records (used for ownership verification and mail security filters like SPF and DMARC). Inspecting these records helps diagnose connection errors and domain setup issues.`
+  },
+  'domain-age-checker': {
+  title: 'Free Domain Age & Expiry Date Checker',
+  introduction: `Domain age is a key parameter evaluated by search engine algorithms and cybersecurity systems to determine domain authority and trustworthiness.
+
+  Our free Domain Age & Expiry Checker retrieves official RDAP registration records to display the exact creation date, expiration date, registrar information, and domain age in years and months.`,
+
+  features: [
+    {
+      title: 'Exact Age Calculation',
+      description: 'Calculates domain longevity down to exact years, months, and days.'
+    },
+    {
+      title: 'Expiry Tracking',
+      description: 'Displays official domain expiration dates to prevent accidental domain drop or renewal loss.'
+    },
+    {
+      title: 'RDAP Protocol Powered',
+      description: 'Queries secure, modern RDAP registry servers directly for highly accurate data.'
+    },
+    {
+      title: 'Registrar Details',
+      description: 'Identifies the domain registrar managing the web address.'
+    }
+  ],
+
+  howToUse: [
+    'Enter the domain name you want to verify in the search box.',
+    'Click the "Check Age" button to query registration databases.',
+    'View the total calculated age along with registration and expiration dates.'
+  ],
+
+  useCases: [
+    {
+      title: 'SEO & Domain Valuation',
+      description: 'Evaluate aged domain opportunities for backlinks, organic authority, or domain Flipping.'
+    },
+    {
+      title: 'Security Auditing',
+      description: 'Identify freshly registered lookalike domains used in phishing or scam campaigns.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Does domain age impact SEO rankings?',
+      answer: 'Yes. Older domains with established history generally rank faster than brand-new domains due to established trust signals.'
+    },
+    {
+      question: 'What is RDAP?',
+      answer: 'RDAP (Registration Data Access Protocol) is the modern, structured replacement for traditional WHOIS lookup queries.'
+    }
+  ],
+
+  detailedGuide: `Why Domain Age Matters
+
+  Search engines prioritize established domains over newly registered websites because older domains have built up historical trust. Checking domain registration history helps marketers evaluate domain acquisitions, audit competitor assets, and detect suspicious web domains.`
+ },
+ 'ip-subnet-calculator': {
+  title: 'Free Online IPv4 Subnet & CIDR Calculator',
+  introduction: `Subnetting splits large IPv4 networks into smaller, efficient network segments to improve network security and optimize routing bandwidth.
+
+  Our free IP Subnet Calculator provides instant calculations for Network Addresses, Subnet Masks, Broadcast Addresses, and Usable Host ranges across all CIDR notation prefixes (/0 to /32).`,
+
+  features: [
+    {
+      title: 'Full CIDR Prefix Support',
+      description: 'Calculates subnet bounds across all prefix ranges from /0 up to /32.'
+    },
+    {
+      title: 'Network & Broadcast Calculations',
+      description: 'Determines precise starting network addresses and ending broadcast addresses.'
+    },
+    {
+      title: 'Usable Host Capacity',
+      description: 'Calculates exact usable IP host assignments for routing configuration.'
+    },
+    {
+      title: 'IP Class Detection',
+      description: 'Automatically identifies legacy IP address classes (Class A, B, C, D, E).'
+    }
+  ],
+
+  howToUse: [
+    'Enter any valid IPv4 address into the IP Address field.',
+    'Select your target CIDR prefix notation (e.g. /24) from the dropdown list.',
+    'Click "Calculate Subnet" to generate the network parameters.',
+    'Review usable IP host ranges, subnet mask octets, and broadcast values in the breakdown cards.'
+  ],
+
+  useCases: [
+    {
+      title: 'Network Engineering & Routing',
+      description: 'Design subnet topology for office networks, router VLANs, and cloud VPC environments.'
+    },
+    {
+      title: 'Firewall Rule Configuration',
+      description: 'Define CIDR blocks accurately when setting up security group whitelist filters.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'What is a CIDR notation?',
+      answer: 'CIDR (Classless Inter-Domain Routing) notation specifies the number of leading 1-bits in a subnet mask, written as a slash followed by the number (e.g. /24).'
+    },
+    {
+      question: 'Why are two IP addresses reserved in a subnet?',
+      answer: 'The first address represents the Network ID and the final address serves as the Broadcast ID, making them unavailable for assignment to host devices.'
+    }
+  ],
+
+  detailedGuide: `Understanding IPv4 Subnetting
+
+  Subnetting organizes physical IP networks into logical partitions. By applying a subnet mask, network administrators separate host bits from network bits, ensuring broadcasts remain isolated inside local subnets while protecting overall network integrity.`
+ },
+ 'ssl-checker': {
+  title: 'Free Online SSL Certificate Checker',
+  introduction: `Secure Sockets Layer (SSL) and Transport Layer Security (TLS) certificates encrypt data exchanged between browsers and web servers, ensuring safe user interaction and maintaining SEO trust scores.
+
+  Our free SSL Certificate Checker diagnoses domain HTTPS readiness, verifying certificate validity, issuer details, and days left before mandatory renewal.`,
+
+  features: [
+    {
+      title: 'Instant Validity Verification',
+      description: 'Determines if target domain certificate handshake is active and operational.'
+    },
+    {
+      title: 'Expiration Countdown',
+      description: 'Displays precise days remaining before SSL expiration to avoid website downtime.'
+    },
+    {
+      title: 'Certificate Authority Identification',
+      description: 'Identifies issuing Certificate Authority (CA) such as Let\'s Encrypt, DigiCert, or Cloudflare.'
+    },
+    {
+      title: 'Browser Security Auditing',
+      description: 'Helps prevent privacy warnings ("Connection Is Not Private") on web applications.'
+    }
+  ],
+
+  howToUse: [
+    'Enter the website URL or domain name in the input field.',
+    'Click the "Check SSL" button to initiate secure TLS handshake check.',
+    'View SSL validity status, issuer details, and certificate expiration schedule.'
+  ],
+
+  useCases: [
+    {
+      title: 'Website Health Maintenance',
+      description: 'Monitor automated SSL renewal scripts (e.g., Certbot) to catch failed renewals early.'
+    },
+    {
+      title: 'E-commerce Compliance',
+      description: 'Ensure active SSL encryption required for online payment processor integrations.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'What happens when an SSL certificate expires?',
+      answer: 'Browsers show strict security warning screens blocking users from entering the site, resulting in massive traffic drops.'
+    },
+    {
+      question: 'How often do free SSL certificates expire?',
+      answer: 'Free SSL certificates (like Let\'s Encrypt) typically expire every 90 days and require automated auto-renewals.'
+    }
+  ],
+
+  detailedGuide: `Understanding SSL/TLS Encryption
+
+  SSL/TLS certificates turn HTTP into secure HTTPS. They cryptographically verify server identity and protect sensitive user credentials, credit card info, and private queries from interception attacks.`
+ },
+ 'html-minifier': {
+  title: 'Free Online HTML Minifier & Markup Compressor',
+  introduction: `Optimizing raw HTML files is critical for achieving optimal Google PageSpeed scores and fast Core Web Vitals.
+
+  Our free HTML Minifier compresses raw HTML code by eliminating unnecessary line breaks, double spaces, and code comments without altering page structure or browser execution.`,
+
+  features: [
+    {
+      title: 'Comment Removal',
+      description: 'Strips out standard HTML comments to reduce payload size.'
+    },
+    {
+      title: 'Whitespace Compression',
+      description: 'Removes unnecessary tabs, spaces, and newline characters.'
+    },
+    {
+      title: 'Real-Time Reduction Metrics',
+      description: 'Calculates precise percentage of file size saved during compression.'
+    },
+    {
+      title: '100% Client-Side Processing',
+      description: 'Code is minified directly inside your browser for maximum privacy.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your raw uncompressed HTML markup into the left input box.',
+    'Click "Minify HTML" to run the compression algorithm.',
+    'Review original versus minified size stats below.',
+    'Click "Copy Code" to store the minified code in your clipboard.'
+  ],
+
+  useCases: [
+    {
+      title: 'Web Speed Optimization',
+      description: 'Compress static HTML templates for production deployments.'
+    },
+    {
+      title: 'Email Template Delivery',
+      description: 'Reduce HTML email sizes to prevent clipping issues in clients like Gmail.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will HTML minification break my webpage rendering?',
+      answer: 'No. HTML minifier retains all elements, tags, attributes, and inline scripts without altering visual rendering or layout functionality.'
+    },
+    {
+      question: 'Why is HTML minification important for SEO?',
+      answer: 'Minified HTML decreases overall page weight, improving page load speeds which directly impacts search engine rankings and mobile performance.'
+    }
+  ],
+
+  detailedGuide: `Understanding HTML Compression
+
+  Minification is a standard web performance practice that removes redundant formatting elements from source code. Combining HTML minification with CSS and JS minification yields lighter web bundles and faster Time-To-Interactive (TTI).`
+ },
+ 'html-beautifier': {
+  title: 'Free Online HTML Beautifier & Code Formatter',
+  introduction: `Reading unformatted or compressed HTML markup can be difficult during debugging or code review sessions.
+
+  Our free HTML Beautifier formats messy, minified, or disorganized HTML code automatically, adding standard 2-space indentation and restoring clear hierarchical tree views.`,
+
+  features: [
+    {
+      title: 'Automatic Tree Indentation',
+      description: 'Adds nested spacing to nested elements for readability.'
+    },
+    {
+      title: 'Self-Closing Tag Awareness',
+      description: 'Correctly identifies void HTML tags like img, input, and meta without corrupting DOM layout.'
+    },
+    {
+      title: 'Instant Browser Formatting',
+      description: 'Formats code instantly using local JavaScript execution.'
+    },
+    {
+      title: 'One-Click Clipboard Copy',
+      description: 'Copy beautified code output with a single button click.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your minified or unformatted HTML code into the left editor.',
+    'Click "Beautify HTML" to structure the DOM tree.',
+    'Review the indented result in the right output panel.',
+    'Click "Copy Code" to store the clean markup.'
+  ],
+
+  useCases: [
+    {
+      title: 'Code Refactoring',
+      description: 'Clean up legacy codebase markup or un-minify production code snippets.'
+    },
+    {
+      title: 'DOM Structure Inspection',
+      description: 'Verify nested div or section element hierarchies during template design.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will formatting HTML change how my site looks in browsers?',
+      answer: 'No. HTML beautification adds indentation whitespace which browsers render identically to minified code.'
+    },
+    {
+      question: 'Can I format incomplete HTML fragments?',
+      answer: 'Yes, the parser processes isolated tags, component snippets, or complete HTML documents.'
+    }
+  ],
+
+  detailedGuide: `Why Use HTML Code Beautification?
+
+  Beautification transforms unreadable minified code blocks into structured source files. It improves code maintainability, simplifies developer collaboration, and speeds up syntax bug tracking.`
+ },
+ 'javascript-minifier': {
+  title: 'Free Online JavaScript Minifier & Compressor',
+  introduction: `Minifying JavaScript files reduces payload size, speeds up script execution, and boosts overall frontend web performance.
+
+  Our free JavaScript Minifier strips unnecessary comments, line breaks, and whitespace from script files without altering code execution or breaking application logic.`,
+
+  features: [
+    {
+      title: 'Comment Stripping',
+      description: 'Removes inline and block comments to reduce overall byte count.'
+    },
+    {
+      title: 'Whitespace Compression',
+      description: 'Eliminates redundant spacing and indentation while keeping valid JavaScript syntax intact.'
+    },
+    {
+      title: 'Client-Side Safety',
+      description: 'Runs execution entirely in your browser memory for maximum code privacy.'
+    },
+    {
+      title: 'Instant Download & Copy',
+      description: 'Quickly copy output or download minified .js files for deployment.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your raw JavaScript code into the left text box.',
+    'Click "Minify JS" to compress the script.',
+    'Review the minified code output in the right panel.',
+    'Click "Copy Result" or "Download" to save the minified JS file.'
+  ],
+
+  useCases: [
+    {
+      title: 'Production Bundling',
+      description: 'Reduce asset sizes before pushing JavaScript files to live servers.'
+    },
+    {
+      title: 'PageSpeed Optimization',
+      description: 'Lower total JavaScript parsing time to achieve better Lighthouse performance metrics.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will minifying JavaScript break my functionality?',
+      answer: 'No. The minifier preserves all statements, logic, variables, and scope rules.'
+    },
+    {
+      question: 'Is my JS code sent to any remote server?',
+      answer: 'No. All minification logic runs 100% locally in your web browser.'
+    }
+  ],
+
+  detailedGuide: `Understanding JavaScript Compression
+
+  Minification is a core build step in web development. Compressing JavaScript scripts reduces network bandwidth usage and allows web browsers to parse client-side scripts significantly faster.`
+ },
+ 'javascript-obfuscator': {
+  title: 'Free Online JavaScript Obfuscator & Code Encryptor',
+  introduction: `JavaScript obfuscation transforms original JS source code into a complex format that is difficult for humans to analyze, reverse-engineer, or tamper with while remaining executable by JS engines.
+
+  Our JavaScript Obfuscator encodes string literals, strips code comments, and wraps functions in encoded execution strings.`,
+
+  features: [
+    {
+      title: 'String Literal Encoding',
+      description: 'Converts plain-text strings into hexadecimal escape sequences.'
+    },
+    {
+      title: 'Execution Protection Wrapper',
+      description: 'Wraps execution logic into Base64 decode-eval routines.'
+    },
+    {
+      title: 'Client-Side Processing',
+      description: 'All obfuscation runs inside your local browser instance.'
+    },
+    {
+      title: 'Download & Copy Support',
+      description: 'Easily export obfuscated output to .js files or copy directly.'
+    }
+  ],
+
+  howToUse: [
+    'Paste plain JavaScript code into the left text area.',
+    'Click "Obfuscate JS" to scramble your script.',
+    'Inspect the protected script output in the right column.',
+    'Click "Copy Result" or "Download" to export the obfuscated code.'
+  ],
+
+  useCases: [
+    {
+      title: 'Source Code Protection',
+      description: 'Prevent casual reverse engineering and theft of client-side web application logic.'
+    },
+    {
+      title: 'API & Key Hiding',
+      description: 'Obscure public identifiers and inline string variables inside scripts.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will obfuscated JavaScript still run in web browsers?',
+      answer: 'Yes. Obfuscated code maintains original execution behavior while hiding readable structure.'
+    },
+    {
+      question: 'Is my JS code safe when using this tool?',
+      answer: 'Yes, processing is entirely client-side; no code is uploaded to servers.'
+    }
+  ],
+
+  detailedGuide: `Understanding Code Obfuscation
+
+  JavaScript code sent to modern web browsers is open to inspection. Obfuscation makes script analysis much harder for third parties by replacing readable components with complex encoded patterns.`
+ },
+ 'json-minifier': {
+  title: 'Free Online JSON Minifier & Compressor',
+  introduction: `Minifying JSON data strips whitespace, newlines, and formatting indents to optimize payload sizes for network requests and backend storage.
+
+  Our JSON Minifier parses raw JSON payloads and converts them into compact, single-line data strings while checking for syntax errors.`,
+
+  features: [
+    {
+      title: 'Fast JSON Compression',
+      description: 'Removes all unnecessary whitespace, newlines, and line breaks instantly.'
+    },
+    {
+      title: 'Syntax Validation',
+      description: 'Validates JSON structure during compression to prevent corrupted payload output.'
+    },
+    {
+      title: 'Browser-Based Security',
+      description: 'Executes parsing locally in browser memory without sending data to servers.'
+    },
+    {
+      title: 'Direct File Export',
+      description: 'Easily copy minified strings or download them directly as .json files.'
+    }
+  ],
+
+  howToUse: [
+    'Paste formatted JSON code into the left input textarea.',
+    'Click "Minify JSON" to compress the payload.',
+    'Review the single-line JSON string in the output box.',
+    'Click "Copy Result" or "Download" to export the minified output.'
+  ],
+
+  useCases: [
+    {
+      title: 'API Payload Optimization',
+      description: 'Minimize payload sizes sent over WebSockets and REST APIs.'
+    },
+    {
+      title: 'Database Storage Optimization',
+      description: 'Store JSON structures compactly in document databases or cache stores.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will minifying JSON alter data keys or values?',
+      answer: 'No. Minification strictly strips structural formatting characters without modifying string keys or data values.'
+    },
+    {
+      question: 'Is my JSON data processed privately?',
+      answer: 'Yes. All parsing happens locally in your browser memory.'
+    }
+  ],
+
+  detailedGuide: `Understanding JSON Compression
+
+  JSON minification reduces raw document sizes without changing structure or data types. Eliminating spaces, tabs, and newlines makes data transfers across networks faster.`
+ },
+ 'xml-beautifier': {
+  title: 'Free Online XML Beautifier & Formatter',
+  introduction: `Format, indent, and validate raw XML code. Our XML Beautifier transforms unformatted XML strings into structured, easy-to-read trees with standard tag nesting.`,
+
+  features: [
+    {
+      title: 'Automatic Indentation',
+      description: 'Applies consistent spacing to display nested tag hierarchies clearly.'
+    },
+    {
+      title: 'Syntax Validation',
+      description: 'Detects structural syntax errors before formatting to ensure valid XML.'
+    },
+    {
+      title: 'Minification Support',
+      description: 'Easily switch between beautified and minified output formats.'
+    },
+    {
+      title: 'Local Browser Processing',
+      description: 'Runs entirely in your browser without transmitting sensitive XML payloads.'
+    }
+  ],
+
+  howToUse: [
+    'Paste raw XML code into the left text box.',
+    'Click "Beautify XML" to format nested tags with clean line indentation.',
+    'Review the organized XML tree in the right output panel.',
+    'Click "Copy Result" or "Download" to save your formatted .xml file.'
+  ],
+
+  useCases: [
+    {
+      title: 'Sitemap & RSS Feeds',
+      description: 'Format complex XML sitemaps or RSS feeds for easy debugging.'
+    },
+    {
+      title: 'SOAP & Web API Logs',
+      description: 'Pretty-print messy XML request and response payloads from web services.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will this tool fix invalid XML syntax automatically?',
+      answer: 'No, it checks for syntax validity and reports errors if tag brackets or closing elements are missing.'
+    },
+    {
+      question: 'Is my XML data sent to any server?',
+      answer: 'No. All processing happens locally within your web browser.'
+    }
+  ],
+
+  detailedGuide: `Understanding XML Formatting
+
+  XML (Extensible Markup Language) relies on structured tag hierarchies. Proper formatting with correct indentation simplifies reading, maintaining, and debugging XML configurations, sitemaps, and data exchange documents.`
+ },
+ 'xml-minifier': {
+  title: 'Free Online XML Minifier & Compressor',
+  introduction: `Minify XML markup by stripping comments, spaces, and line breaks. Our XML Minifier condenses XML structures into compact payloads for faster server transfers and storage optimization.`,
+
+  features: [
+    {
+      title: 'Comment & Space Removal',
+      description: 'Strips out redundant tags, XML comments, and whitespace intervals.'
+    },
+    {
+      title: 'XML Syntax Check',
+      description: 'Validates XML tree tags before compression to prevent invalid output.'
+    },
+    {
+      title: 'Beautify Option Included',
+      description: 'Easily convert compressed XML back into formatted tree layouts.'
+    },
+    {
+      title: 'Client-Side Privacy',
+      description: 'All processing takes place in your browser without external file uploads.'
+    }
+  ],
+
+  howToUse: [
+    'Paste XML content into the left textarea.',
+    'Click "Minify XML" to condense structural spacing.',
+    'Inspect the single-line XML payload in the right column.',
+    'Click "Copy Result" or "Download" to export your minified file.'
+  ],
+
+  useCases: [
+    {
+      title: 'Web Service Optimization',
+      description: 'Reduce payload sizes for XML-based SOAP responses and RSS feeds.'
+    },
+    {
+      title: 'Sitemap Compression',
+      description: 'Compress large XML sitemaps to optimize website loading speeds.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will XML minification strip my attributes or tag data?',
+      answer: 'No. Minification strictly removes non-essential structural whitespace and comments.'
+    },
+    {
+      question: 'Is my XML payload secure?',
+      answer: 'Yes. Processing is completely client-side inside your web browser.'
+    }
+  ],
+
+  detailedGuide: `Understanding XML Minification
+
+  Minifying XML files strips extra indentation and whitespace between tags. This reduces bandwidth usage when transmitting large XML sitemaps, config files, or web service feeds over HTTP.`
+ },
 };
 

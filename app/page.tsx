@@ -74,7 +74,7 @@ export default function HomePage() {
                   {categoryTools.map((tool) => (
                     <article key={tool.id}>
                       <Link
-                        href={`/tools/${tool.slug}`}
+                        href={`/${tool.slug}`}
                         className="group block p-6 bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 hover:border-blue-500 transition-all duration-200 h-full flex flex-col justify-between"
                       >
                         <div>
