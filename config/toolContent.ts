@@ -1561,5 +1561,173 @@ Unlike traditional web services that process your sensitive data through remote 
 
   Image-to-Prompt conversion uses advanced computer vision to break down visual elements into descriptive natural language tokens. By identifying key components such as subject matter, lighting, camera angles, textures, and artistic movement, the tool recreates the precise text query required to reproduce similar visual outputs.`
  },
+ 'svg-to-react': {
+  title: 'Free Online SVG to React (TSX) Component Converter',
+  introduction: `Convert raw SVG code directly into clean, customizable React functional components written in TypeScript. Our client-side SVG to TSX converter automatically converts standard HTML SVG attributes into React-compatible camelCase props, strips unnecessary metadata, and injects SVGProps support for seamless integration into modern React and Next.js design systems.`,
+
+  features: [
+    {
+      title: 'Automatic Attribute CamelCasing',
+      description: 'Automatically maps attributes like stroke-width, fill-rule, and stroke-linecap into JSX-compliant camelCase format.'
+    },
+    {
+      title: 'SVGProps TypeScript Support',
+      description: 'Injects SVGProps<SVGSVGElement> to allow dynamic class, size, and style overrides from parent components.'
+    },
+    {
+      title: 'Custom Component Naming',
+      description: 'Specify custom PascalCase names to fit your design system icon libraries.'
+    },
+    {
+      title: '100% Client-Side Privacy',
+      description: 'All vector parsing and code transformations execute locally in your browser.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your raw SVG markup into the left input textarea.',
+    'Enter a custom PascalCase component name (e.g., UserProfileIcon).',
+    'Click "Convert to TSX Component" to process vector attributes.',
+    'Click "Copy Code" to copy the ready-to-use TypeScript component into your React codebase.'
+  ],
+
+  useCases: [
+    {
+      title: 'Design System Icon Libraries',
+      description: 'Convert raw exported Figma SVG files directly into React icon components.'
+    },
+    {
+      title: 'Dynamic Vector Styling',
+      description: 'Pass dynamic Tailwind CSS classes, fill colors, and click handlers to custom vector graphics.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Does this tool support Next.js and Tailwind CSS?',
+      answer: 'Yes. The generated component uses standard React SVGProps, making it fully compatible with Next.js, React 18/19, and Tailwind CSS styling.'
+    },
+    {
+      question: 'Is my SVG code stored anywhere on a server?',
+      answer: 'No. All conversion algorithms execute entirely client-side inside your browser session.'
+    }
+  ],
+
+  detailedGuide: `Understanding SVG to JSX Transformation
+
+  Standard SVG files use HTML-style hyphenated attributes (e.g., stroke-width, fill-rule) which trigger warnings when rendered directly inside React render trees. This tool converts hyphenated vector attributes into valid JSX camelCase properties while wrapping the vector tree in a reusable React functional component boilerplate.`
+ },
+ 'crypto-wallet-checker': {
+  title: 'Free Online Crypto Wallet Address & Blockchain Checker',
+  introduction: `Identify the blockchain network behind any cryptocurrency wallet address instantly. Our client-side Wallet Checker parses regex patterns and cryptographic address formats to detect EVM chains (Ethereum, BSC, Polygon), Bitcoin, Solana, TRON, Cardano, TON, and more.`,
+
+  features: [
+    {
+      title: 'Multi-Chain Regex Detection',
+      description: 'Accurately identifies address formats across 15+ major blockchains including EVM, Bitcoin, Solana, and TRON.'
+    },
+    {
+      title: 'Direct Block Explorer Link',
+      description: 'Provides direct one-click links to view transaction history and balances on Etherscan, Mempool, Solscan, and Tronscan.'
+    },
+    {
+      title: 'Comprehensive Address Breakdown',
+      description: 'Displays native token tickers, underlying network types (UTXO, EVM, eUTXO), and network status.'
+    },
+    {
+      title: '100% Private Client-Side Parsing',
+      description: 'All address checks run entirely in your local browser session without logging or transmitting wallet addresses.'
+    }
+  ],
+
+  howToUse: [
+    'Paste any public crypto wallet address into the left input area.',
+    'Click "Check Blockchain" to analyze the address structure.',
+    'Inspect detected blockchain info, token symbol, and address standard on the right panel.',
+    'Click "View on Explorer ↗" to inspect live on-chain data.'
+  ],
+
+  useCases: [
+    {
+      title: 'Cross-Chain Transfer Verification',
+      description: 'Verify destination network formats before executing token transfers to avoid sending funds to incompatible chains.'
+    },
+    {
+      title: 'Web3 & dApp Integration Support',
+      description: 'Quickly validate user-submitted public wallet strings across diverse ecosystem standards.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Can this tool read private keys or wallet balances?',
+      answer: 'No. This tool only validates public address string formats and does not request private keys or connect to web3 wallets.'
+    },
+    {
+      question: 'Which EVM networks share the same 0x address format?',
+      answer: 'EVM-compatible chains like Ethereum, BNB Smart Chain, Polygon, Avalanche C-Chain, Arbitrum, and Optimism share the same 0x format.'
+    }
+  ],
+
+  detailedGuide: `Understanding Crypto Address Structure & Regex Detection
+
+  Cryptocurrency wallet addresses use network-specific encoding schemes (such as Hexadecimal, Base58, and Bech32) and fixed prefix signatures. By running deterministic regular expression checks on string length, prefixes (like 0x, bc1, addr1, or T), and character sets, wallet tools can accurately identify the target blockchain without querying external nodes.`
+ },
+ 'pdf-to-image': {
+  title: 'Free Online PDF to Image Converter (PNG & JPEG)',
+  introduction: `Convert PDF pages into high-resolution PNG or JPEG images directly in your browser. Fast, secure, and zero upload required—your files never leave your device.`,
+
+  features: [
+    {
+      title: 'High Resolution Render',
+      description: 'Converts PDF pages into sharp, high-DPI raster images without loss of clarity.'
+    },
+    {
+      title: 'Multiple Format Support',
+      description: 'Choose between PNG for maximum image quality or JPEG for smaller file size.'
+    },
+    {
+      title: '100% Client-Side Privacy',
+      description: 'All processing happens locally inside your browser using PDF.js. No server uploads.'
+    },
+    {
+      title: 'Per-Page & Bulk Download',
+      description: 'Download individual page images separately or batch download all converted pages.'
+    }
+  ],
+
+  howToUse: [
+    'Click on the upload box or drag and drop your PDF file.',
+    'Select your desired output format (PNG or JPEG) from the controls panel.',
+    'Click "Convert to Images" to process the PDF pages.',
+    'Preview converted images on the right and click "Download" for single pages or "Download All".'
+  ],
+
+  useCases: [
+    {
+      title: 'Extract Images from Documents',
+      description: 'Extract diagrams, slides, or illustrations from reports and ebooks for use in presentations.'
+    },
+    {
+      title: 'Social Media & Web Sharing',
+      description: 'Convert PDF flyers, certificates, or posters into shareable PNG/JPEG image files.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is my PDF uploaded to any server?',
+      answer: 'No. The conversion is performed completely inside your web browser. Your document is never uploaded or saved anywhere.'
+    },
+    {
+      question: 'Are there any page limits for conversion?',
+      answer: 'There are no artificial limits. However, processing very large PDFs (100+ pages) depends on your computer memory.'
+    }
+  ],
+
+  detailedGuide: `How Browser-Based PDF to Image Conversion Works
+
+  Using Mozilla's PDF.js library, the browser reads the binary structure of your PDF file, parses vector objects, fonts, and layouts, and renders each page onto an HTML5 Canvas element at high DPI resolution. The canvas is then exported directly to PNG or JPEG data URLs for download without relying on server-side rendering pipelines.`
+ },
 };
 

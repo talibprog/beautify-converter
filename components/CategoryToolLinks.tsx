@@ -32,6 +32,27 @@ function getItemBadge(slug: string) {
 }
 
 export default function CategoryToolLinks({ currentSlug }: { currentSlug?: string }) {
+  // -------------------------------------------------------------
+  // Dynamic Height Balancing Algorithm for Masonry Grid
+  // -------------------------------------------------------------
+  const NUM_COLUMNS = 4;
+  const columnCategories: string[][] = Array.from({ length: NUM_COLUMNS }, () => []);
+  const columnHeights: number[] = Array(NUM_COLUMNS).fill(0);
+
+  CATEGORIES.forEach((category) => {
+    const categoryTools = TOOLS.filter((tool) => tool.category === category);
+    if (categoryTools.length === 0) return;
+
+    // Sabse kam height/items wale column ka index search karo
+    const minColIndex = columnHeights.indexOf(Math.min(...columnHeights));
+
+    // Approximate height calculation: Header height (50px) + (Item Count * Item height 42px)
+    const cardEstimatedHeight = 50 + categoryTools.length * 42;
+
+    columnCategories[minColIndex].push(category);
+    columnHeights[minColIndex] += cardEstimatedHeight;
+  });
+
   return (
     <section className="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-sm space-y-6">
       {/* HEADER */}
@@ -49,71 +70,75 @@ export default function CategoryToolLinks({ currentSlug }: { currentSlug?: strin
         </span>
       </div>
 
-      {/* CATEGORY GRID CARDS */}
+      {/* BALANCED 4-COLUMN MASONRY GRID */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
-        {CATEGORIES.map((category) => {
-          const categoryTools = TOOLS.filter((tool) => tool.category === category);
-          if (categoryTools.length === 0) return null;
+        {columnCategories.map((categoriesInCol, colIndex) => (
+          <div key={colIndex} className="flex flex-col gap-6">
+            {categoriesInCol.map((category) => {
+              const categoryTools = TOOLS.filter((tool) => tool.category === category);
+              if (categoryTools.length === 0) return null;
 
-          return (
-            <div
-              key={category}
-              className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden"
-            >
-              {/* CATEGORY CARD HEADER */}
-              <div className="bg-slate-900 px-4 py-3 flex items-center justify-between text-white border-b border-slate-800">
-                <h4 className="text-xs font-bold uppercase tracking-wider flex items-center gap-2 truncate">
-                  <span>{getCategoryIcon(category)}</span>
-                  <span>{category}</span>
-                </h4>
-                <span className="text-[10px] font-extrabold bg-blue-600 text-white px-2 py-0.5 rounded-full shrink-0">
-                  {categoryTools.length}
-                </span>
-              </div>
+              return (
+                <div
+                  key={category}
+                  className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden"
+                >
+                  {/* CATEGORY CARD HEADER */}
+                  <div className="bg-slate-900 px-4 py-3 flex items-center justify-between text-white border-b border-slate-800">
+                    <h4 className="text-xs font-bold uppercase tracking-wider flex items-center gap-2 truncate">
+                      <span>{getCategoryIcon(category)}</span>
+                      <span>{category}</span>
+                    </h4>
+                    <span className="text-[10px] font-extrabold bg-blue-600 text-white px-2 py-0.5 rounded-full shrink-0">
+                      {categoryTools.length}
+                    </span>
+                  </div>
 
-              {/* LIST ITEMS WITH CLEAR BORDER SEPARATION */}
-              <ul className="divide-y divide-gray-200/80 text-xs">
-                {categoryTools.map((tool) => {
-                  const isActive = tool.slug === currentSlug;
-                  const badge = getItemBadge(tool.slug);
+                  {/* LIST ITEMS */}
+                  <ul className="divide-y divide-gray-200/80 text-xs">
+                    {categoryTools.map((tool) => {
+                      const isActive = tool.slug === currentSlug;
+                      const badge = getItemBadge(tool.slug);
 
-                  return (
-                    <li key={tool.id}>
-                      <Link
-                        href={`/${tool.slug}`}
-                        className={`flex items-center justify-between px-3.5 py-3 transition group ${
-                          isActive
-                            ? 'bg-blue-50 text-blue-700 font-bold border-l-4 border-blue-600'
-                            : 'hover:bg-gray-50 text-gray-700 hover:text-blue-600'
-                        }`}
-                      >
-                        <div className="flex items-center gap-2.5 min-w-0 pr-2">
-                          {/* ITEM ICON BADGE */}
-                          <span
-                            className={`px-1.5 py-0.5 rounded text-[10px] font-black shrink-0 ${badge.bg}`}
+                      return (
+                        <li key={tool.id}>
+                          <Link
+                            href={`/${tool.slug}`}
+                            className={`flex items-center justify-between px-3.5 py-3 transition group ${
+                              isActive
+                                ? 'bg-blue-50 text-blue-700 font-bold border-l-4 border-blue-600'
+                                : 'hover:bg-gray-50 text-gray-700 hover:text-blue-600'
+                            }`}
                           >
-                            {badge.text}
-                          </span>
-                          <span className="truncate">{tool.name}</span>
-                        </div>
+                            <div className="flex items-center gap-2.5 min-w-0 pr-2">
+                              {/* ITEM ICON BADGE */}
+                              <span
+                                className={`px-1.5 py-0.5 rounded text-[10px] font-black shrink-0 ${badge.bg}`}
+                              >
+                                {badge.text}
+                              </span>
+                              <span className="truncate">{tool.name}</span>
+                            </div>
 
-                        {isActive ? (
-                          <span className="text-[10px] font-bold text-blue-600 bg-blue-100 px-1.5 py-0.5 rounded shrink-0">
-                            Active
-                          </span>
-                        ) : (
-                          <span className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition-transform shrink-0">
-                            →
-                          </span>
-                        )}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          );
-        })}
+                            {isActive ? (
+                              <span className="text-[10px] font-bold text-blue-600 bg-blue-100 px-1.5 py-0.5 rounded shrink-0">
+                                Active
+                              </span>
+                            ) : (
+                              <span className="text-gray-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition-transform shrink-0">
+                                →
+                              </span>
+                            )}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        ))}
       </div>
     </section>
   );

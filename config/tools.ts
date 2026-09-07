@@ -25,7 +25,7 @@ export const TOOLS: Tool[] = [
     id: "csv-to-json",
     name: "CSV to JSON Converter",
     slug: "csv-to-json",
-    category: "Code Converters",
+    category: "Converters",
     description: "Convert CSV data into clean, structured JSON format instantly.",
   },
   {
@@ -60,7 +60,7 @@ export const TOOLS: Tool[] = [
     id: "csv-to-html-table",
     name: "CSV to HTML Table Converter",
     slug: "csv-to-html-table",
-    category: "Code Converters",
+    category: "Converters",
     description: "Convert raw CSV spreadsheet data into semantic, structured HTML table elements instantly.",
   },
   {
@@ -188,6 +188,27 @@ export const TOOLS: Tool[] = [
     slug: "image-to-prompt",
     category: "AI & Multimedia Tools",
     description: "Upload any image and generate detailed Midjourney, DALL-E 3, and Stable Diffusion prompts instantly.",
+  },
+  {
+    id: "svg-to-react",
+    name: "SVG to React TSX Converter",
+    slug: "svg-to-react",
+    category: "Converters",
+    description: "Transform raw SVG vector code into production-ready React (TSX) functional components instantly.",
+  },
+  {
+    id: "crypto-wallet-checker",
+    name: "Crypto Wallet Address Checker",
+    slug: "crypto-wallet-checker",
+    category: "Crypto & Network Utilities",
+    description: "Instantly detect the blockchain network, native symbol, and address type for any cryptocurrency wallet address.",
+  },
+  {
+    id: "pdf-to-image",
+    name: "PDF to Image Converter",
+    slug: "pdf-to-image",
+    category: "Converters",
+    description: "Convert PDF pages into high-quality PNG or JPEG images directly inside your browser.",
   },
 ];
 
