@@ -531,5 +531,63 @@ Unlike traditional web services that process your sensitive data through remote 
 
     Converting CSV records into HTML tables replaces delimited text streams with semantic HTML elements (\`<table>\`, \`<thead>\`, \`<tbody>\`, \`<tr>\`, \`<th>\`, \`<td>\`). This makes tabular data accessible, readable, and stylable across responsive modern websites.`
   },
+  'png-to-jpg': {
+    title: 'Free Online PNG to JPG Converter',
+    introduction: `PNG images offer lossless quality and transparent backgrounds, but they often result in large file sizes that slow down website loading times.
+
+    Our free online PNG to JPG Converter lets you transform PNG files into lightweight JPG format instantly inside your browser. Adjust image quality compression levels and reduce file size without sacrificing visual clarity.`,
+
+    features: [
+      {
+        title: 'Instant Browser Conversion',
+        description: 'Converts PNG images directly in your browser using modern Web API technology.'
+      },
+      {
+        title: 'Adjustable Quality Control',
+        description: 'Fine-tune image compression level with a quality slider for optimal balance between size and quality.'
+      },
+      {
+        title: 'White Background Fill',
+        description: 'Automatically replaces transparent areas with solid white background for clean JPG rendering.'
+      },
+      {
+        title: '100% Private & Secure',
+        description: 'Your photos are converted client-side and never saved or uploaded to remote cloud servers.'
+      }
+    ],
+
+    howToUse: [
+      'Click the upload area to select a PNG image from your computer or phone.',
+      'Use the Quality slider to adjust output image compression.',
+      'Compare original and converted file sizes side-by-side.',
+      'Click "Download JPG" to save your converted image file.'
+    ],
+
+    useCases: [
+      {
+        title: 'Website Image Optimization',
+        description: 'Convert heavy website graphics from PNG to JPG to improve page load speed and SEO performance.'
+      },
+      {
+        title: 'Email & Document Uploads',
+        description: 'Shrink image file size for forms, job applications, or email attachments requiring JPG extensions.'
+      }
+    ],
+
+    faq: [
+      {
+        question: 'Will PNG transparent areas become black when converting to JPG?',
+        answer: 'No. Our converter automatically handles transparent backgrounds by replacing them with a clean white canvas background.'
+      },
+      {
+        question: 'Are my uploaded images stored on your server?',
+        answer: 'No. All conversion processing happens strictly in your local device browser memory.'
+      }
+    ],
+
+    detailedGuide: `Why Convert PNG to JPG?
+
+    PNG (Portable Network Graphics) uses lossless compression which preserves every detail, but produces larger file sizes. JPG (Joint Photographic Experts Group) uses lossy compression optimized for digital photography and web graphics, resulting in significantly smaller file sizes without noticeable visual degradation.`
+  },
 };
 

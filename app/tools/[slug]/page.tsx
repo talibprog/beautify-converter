@@ -10,6 +10,7 @@ import SipCalculator from '@/components/tools/SipCalculator';
 import JsonValidator from '@/components/tools/JsonValidator';
 import JsBeautifier from '@/components/tools/JsBeautifier';
 import CsvToHtmlTable from '@/components/tools/CsvToHtmlTable';
+import PngToJpg from '@/components/tools/PngToJpg';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -21,6 +22,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'json-validator': JsonValidator,
   'js-beautifier': JsBeautifier,
   'csv-to-html-table': CsvToHtmlTable,
+  'png-to-jpg-converter': PngToJpg,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

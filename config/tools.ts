@@ -63,6 +63,13 @@ export const TOOLS: Tool[] = [
     category: "Code Converters",
     description: "Convert raw CSV spreadsheet data into semantic, structured HTML table elements instantly.",
   },
+  {
+    id: "png-to-jpg",
+    name: "PNG to JPG Converter",
+    slug: "png-to-jpg-converter",
+    category: "Image Converters",
+    description: "Convert PNG images to JPG format online for free with quality control and smaller file sizes.",
+  },
 ];
 
 // DYNAMIC CATEGORIES: Jo bhi category TOOLS array me hogi, auto-extract ho jayegi
