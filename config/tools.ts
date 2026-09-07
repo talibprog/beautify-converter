@@ -6,13 +6,6 @@ export interface Tool {
   description: string;
 }
 
-export const CATEGORIES = [
-  "Beautifiers & Minifiers",
-  "Code Converters",
-  "Utilities & Encoders",
-  "Image & PDF Tools",
-] as const;
-
 export const TOOLS: Tool[] = [
   {
     id: "json-beautifier",
@@ -42,4 +35,37 @@ export const TOOLS: Tool[] = [
     category: "Utilities & Encoders",
     description: "Encode text strings or decode Base64 strings safely online.",
   },
+  {
+    id: "sip-calculator",
+    name: "SIP Calculator",
+    slug: "sip-calculator",
+    category: "Calculators",
+    description: "Calculate expected returns on your Systematic Investment Plan (SIP) investments.",
+  },
+  {
+    id: "json-validator",
+    name: "JSON Validator",
+    slug: "json-validator",
+    category: "Validators", // <--- Updated category
+    description: "Validate JSON structure online and detect syntax errors instantly.",
+  },
+  {
+    id: "js-beautifier",
+    name: "JavaScript Beautifier",
+    slug: "js-beautifier",
+    category: "Beautifiers & Minifiers",
+    description: "Format, beautify, and un-minify obfuscated JavaScript code for better readability.",
+  },
+  {
+    id: "csv-to-html-table",
+    name: "CSV to HTML Table Converter",
+    slug: "csv-to-html-table",
+    category: "Code Converters",
+    description: "Convert raw CSV spreadsheet data into semantic, structured HTML table elements instantly.",
+  },
 ];
+
+// DYNAMIC CATEGORIES: Jo bhi category TOOLS array me hogi, auto-extract ho jayegi
+export const CATEGORIES = Array.from(
+  new Set(TOOLS.map((tool) => tool.category))
+);
