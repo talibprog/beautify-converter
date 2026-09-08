@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useRef, ChangeEvent } from 'react';
-import heic2any from 'heic2any';
 
 export default function HeicToJpg() {
   const [imageFile, setImageFile] = useState<File | null>(null);
@@ -27,7 +26,10 @@ export default function HeicToJpg() {
     setIsProcessing(true);
 
     try {
-      // HEIC ko JPG Blob me convert karna
+      // Browser environment check & Dynamic import
+      if (typeof window === 'undefined') return;
+      const heic2any = (await import('heic2any')).default;
+
       const conversionResult = await heic2any({
         blob: file,
         toType: 'image/jpeg',
@@ -41,7 +43,6 @@ export default function HeicToJpg() {
       if (convertedUrl) URL.revokeObjectURL(convertedUrl);
       const url = URL.createObjectURL(resultBlob);
 
-      // Agar preview url nahi bana hai toh initial preview set karna
       if (!previewUrl) {
         setPreviewUrl(url);
       }
