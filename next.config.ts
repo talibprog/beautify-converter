@@ -3,6 +3,7 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'standalone',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/' : '',
   serverExternalPackages: ['pdfjs-dist'],
   turbopack: {},
   webpack: (config) => {
