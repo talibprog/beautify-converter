@@ -210,6 +210,63 @@ export const TOOLS: Tool[] = [
     category: "Converters",
     description: "Convert PDF pages into high-quality PNG or JPEG images directly inside your browser.",
   },
+  {
+    id: "image-converter-compressor",
+    name: "Image Converter & Compressor",
+    slug: "image-converter-compressor",
+    category: "Converters",
+    description: "Convert and compress PNG, JPG, WebP images instantly inside your browser. 100% free and private.",
+  },
+  {
+    id: "bio-link-generator",
+    name: "Bio Link & Social Profile Generator",
+    slug: "bio-link-generator",
+    category: "Utilities",
+    description: "Create a custom mobile-ready bio link landing page for Instagram, TikTok, and Twitter in seconds.",
+  },
+  {
+    id: "emi-calculator",
+    name: "EMI Calculator",
+    slug: "emi-calculator",
+    category: "Calculators",
+    description: "Calculate your monthly home, car, or personal loan EMIs instantly with interactive sliders and visual breakdown.",
+  },
+  {
+    id: "css-validator",
+    name: "CSS Validator",
+    slug: "css-validator",
+    category: "Validators",
+    description: "Validate your CSS code instantly to catch syntax errors, missing brackets, unclosed quotes, and bad properties.",
+  },
+  {
+    id: "javascript-validator",
+    name: "JavaScript Validator",
+    slug: "javascript-validator",
+    category: "Validators",
+    description: "Validate JavaScript code online to catch syntax errors, unclosed brackets, and bad statements instantly.",
+  },
+  {
+    id: "xml-validator",
+    name: "XML Validator",
+    slug: "xml-validator",
+    category: "Validators",
+    description: "Validate XML structure online, check well-formedness, and detect tag closing or syntax errors instantly.",
+  },
+  {
+    id: "yaml-validator",
+    name: "YAML Validator",
+    slug: "yaml-validator",
+    category: "Validators",
+    description: "Validate YAML structure online, detect indentation mistakes, missing colons, and syntax errors instantly.",
+  },
+  {
+    id: "heic-to-jpg",
+    name: "HEIC to JPG Converter",
+    slug: "heic-to-jpg",
+    category: "Image Converters",
+    description: "Convert Apple HEIC photos to standard JPG format instantly in your browser without quality loss.",
+  },
+  
 ];
 
 // DYNAMIC CATEGORIES: Jo bhi category TOOLS array me hogi, auto-extract ho jayegi

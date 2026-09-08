@@ -1729,5 +1729,464 @@ Unlike traditional web services that process your sensitive data through remote 
 
   Using Mozilla's PDF.js library, the browser reads the binary structure of your PDF file, parses vector objects, fonts, and layouts, and renders each page onto an HTML5 Canvas element at high DPI resolution. The canvas is then exported directly to PNG or JPEG data URLs for download without relying on server-side rendering pipelines.`
  },
+ 'image-converter-compressor': {
+  title: 'Free Online Image Converter & Compressor (PNG, JPG, WebP)',
+  introduction: `Convert and compress PNG, JPG, and WebP images instantly in your browser. Reduce file size without losing quality with zero uploads required—your photos stay 100% private.`,
+
+  features: [
+    {
+      title: 'Smart Lossy Compression',
+      description: 'Dramatically reduce image file sizes by adjusting quality percentage without sacrificing visual clarity.'
+    },
+    {
+      title: 'Multi-Format Conversion',
+      description: 'Seamlessly convert between JPG, PNG, and WebP formats depending on your needs.'
+    },
+    {
+      title: '100% Client-Side Privacy',
+      description: 'All processing happens locally using HTML5 Canvas. Your images are never uploaded to any server.'
+    },
+    {
+      title: 'Real-Time Savings Stats',
+      description: 'Instantly view original vs compressed size along with exact percentage savings before downloading.'
+    }
+  ],
+
+  howToUse: [
+    'Click on the upload zone or drag and drop your PNG, JPG, or WebP image.',
+    'Select your desired target output format (JPG, PNG, or WebP).',
+    'Adjust the compression quality slider (e.g., 80% recommended for high quality).',
+    'Click "Convert & Compress" to process the image locally.',
+    'Preview the compressed image output and click "Download Compressed Image".'
+  ],
+
+  useCases: [
+    {
+      title: 'Website Performance Optimization',
+      description: 'Convert heavy PNGs into lightweight WebP images to speed up page loading times and boost SEO scores.'
+    },
+    {
+      title: 'Email & Online Form Attachments',
+      description: 'Compress high-resolution photos to meet strict file size limits on government portals and email attachments.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Are my photos uploaded to any server?',
+      answer: 'No. Compression and format conversion happen entirely inside your web browser via HTML Canvas. Your images remain private on your machine.'
+    },
+    {
+      question: 'Will converting PNG to JPG lose transparency?',
+      answer: 'PNGs with transparent backgrounds will automatically be rendered over a clean solid white background when converted to JPG.'
+    }
+  ],
+
+  detailedGuide: `How Browser-Based Image Conversion Works
+
+Using HTML5 Canvas APIs, the browser decodes your image into dynamic pixel buffers. By calling canvas.toDataURL() with specified MIME types and quality indices, the image is re-encoded into optimized WebP, JPEG, or PNG binary strings locally within memory without requiring any backend server infrastructure.`
+ },
+ 'bio-link-generator': {
+  title: 'Free Online Bio Link & Social Profile Link Generator',
+  introduction: `Design a beautiful, mobile-optimized landing page for your social media bios. Add custom links, social profiles, and styling without coding. 100% free and client-side.`,
+
+  features: [
+    {
+      title: 'Live Mobile Preview',
+      description: 'See instant changes in a realistic smartphone mockup as you update your profile details and links.'
+    },
+    {
+      title: 'Custom Themes & Colors',
+      description: 'Choose from pre-built modern aesthetic background themes and button border styles.'
+    },
+    {
+      title: 'Unlimited Custom Links',
+      description: 'Add as many custom redirect buttons for your website, store, portfolio, or YouTube channel as you need.'
+    },
+    {
+      title: '100% Free & Private',
+      description: 'No account required. Everything is generated directly in your browser.'
+    }
+  ],
+
+  howToUse: [
+    'Enter your display name, username handle, and a short bio statement.',
+    'Upload or paste an avatar image URL for your profile picture.',
+    'Add your custom destination links with custom title labels.',
+    'Choose your preferred background color theme and button style.',
+    'Preview the live mobile layout on the right and copy the clean output HTML or preview design.'
+  ],
+
+  useCases: [
+    {
+      title: 'Instagram & TikTok Bios',
+      description: 'Bypass single-link restrictions on social networks by directing followers to a unified link hub.'
+    },
+    {
+      title: 'Digital Business Cards',
+      description: 'Create a lightweight digital contact page sharing portfolio links, WhatsApp, and social channels.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Do I need a server or paid domain to host this?',
+      answer: 'No. You can export the standalone HTML code to host on GitHub Pages, Vercel, Netlify, or embed it into your existing site.'
+    },
+    {
+      question: 'Is there any limit on how many links I can add?',
+      answer: 'There are no artificial limits. You can add as many action buttons as you want.'
+    }
+  ],
+
+  detailedGuide: `How the Client-Side Bio Link Generator Works
+
+This tool dynamically binds form input state to a responsive CSS mobile view frame. It handles inline image encoding and produces clean HTML/CSS markup structured for full accessibility and rapid loading on mobile browsers.`
+ },
+ 'emi-calculator': {
+  title: 'Free Online Loan EMI & Repayment Calculator',
+  introduction: `Calculate exact monthly EMI amounts, total interest payable, and overall loan repayment schedules instantly. Adjust loan amount, interest rates, and loan tenure in real-time with visual breakdown charts. 100% free, fast, and accurate.`,
+
+  features: [
+    {
+      title: 'Instant Calculation',
+      description: 'Get immediate updates on your monthly EMI as you adjust loan amount, interest rate, or tenure sliders.'
+    },
+    {
+      title: 'Visual Interest Breakdown',
+      description: 'View an intuitive color-coded progress bar breaking down principal vs interest amounts.'
+    },
+    {
+      title: 'Interactive Sliders & Numeric Inputs',
+      description: 'Easily tweak values using quick range sliders or precise custom numeric input fields.'
+    },
+    {
+      title: '100% Free & Private',
+      description: 'No signup, registration, or financial data submitted to external servers. Runs entirely in your browser.'
+    }
+  ],
+
+  howToUse: [
+    'Enter or slide to select your total loan amount (Principal).',
+    'Set the annual interest rate percentage charged by the bank/lender.',
+    'Select your loan repayment duration (Tenure) in years.',
+    'Check your calculated monthly EMI, total interest, and overall payable amount on the summary card.'
+  ],
+
+  useCases: [
+    {
+      title: 'Home & Property Loans',
+      description: 'Estimate long-term monthly installments for home purchases and check interest burden over 10-30 years.'
+    },
+    {
+      title: 'Car & Vehicle Financing',
+      description: 'Compare short-term vehicle loan options to find an EMI fit for your monthly budget.'
+    },
+    {
+      title: 'Personal Loans & Education Financing',
+      description: 'Calculate quick fixed-rate personal or student loan repayments before applying to banks.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'What is the formula used to calculate EMI?',
+      answer: 'EMI is calculated using the standard formula: E = P x r x (1 + r)^n / ((1 + r)^n - 1), where P is principal, r is monthly interest rate, and n is total tenure in months.'
+    },
+    {
+      question: 'Does loan tenure affect total interest paid?',
+      answer: 'Yes. A longer tenure reduces your monthly EMI amount but significantly increases the total interest paid over the life of the loan.'
+    }
+  ],
+
+  detailedGuide: `Understanding How Online EMI Calculators Work
+
+An Equated Monthly Installment (EMI) is a fixed payment amount made by a borrower to a lender at a specified date each calendar month. EMIs are applied to both interest and principal each month so that over a specified number of years, the loan is paid off in full.
+
+This tool uses real-time client-side Javascript evaluation to re-render monthly installment values and interest vs principal proportions without reloading or sending requests to a backend server.`
+},
+'css-validator': {
+  title: 'Free Online CSS Validator & Linting Tool',
+  introduction: `Validate and check your CSS stylesheets for syntax errors, unclosed braces, bad property declarations, and structural mistakes instantly. 100% free and runs directly in your browser.`,
+
+  features: [
+    {
+      title: 'Real-Time Error Detection',
+      description: 'Find unclosed brackets, missing semicolons, and invalid property-value pairs as you type.'
+    },
+    {
+      title: 'Detailed Line-by-Line Reporting',
+      description: 'Get clear error messages with exact line numbers so you can fix issues quickly.'
+    },
+    {
+      title: 'CSS Stats & Breakdown',
+      description: 'View total selector counts, rulesets, and code size metrics alongside error reports.'
+    },
+    {
+      title: '100% Client-Side & Private',
+      description: 'Your code is never uploaded to any server. Everything is parsed locally in your browser.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your raw CSS code or stylesheet into the code editor area.',
+    'Click on the "Validate CSS" button to run the syntax analysis.',
+    'Review the generated error list and warning logs with line numbers.',
+    'Fix the identified errors and copy your clean CSS code.'
+  ],
+
+  useCases: [
+    {
+      title: 'Debugging Broken Styles',
+      description: 'Quickly find why a webpage layout broke due to missing closing curly braces or typos.'
+    },
+    {
+      title: 'Code Cleanup & Audit',
+      description: 'Audit custom CSS snippets before pushing them into production, WordPress, or Shopify themes.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Does this tool support CSS3 features?',
+      answer: 'Yes, it checks standard CSS3 properties, flexbox, grid, and media queries.'
+    },
+    {
+      question: 'Is my CSS stored on a database?',
+      answer: 'No. All validation logic runs inside your browser using JavaScript parser algorithms.'
+    }
+  ],
+
+  detailedGuide: `How Client-Side CSS Syntax Validation Works
+
+CSS validation parses input stylesheet strings into structured Abstract Syntax Trees (AST) or token streams. During tokenization, the parser tracks block depth, selector validity, and property-value pairs. 
+
+Common issues caught include mismatched braces ({}), missing trailing semicolons (;), empty selectors, and malformed CSS comments.`
+},
+'javascript-validator': {
+  title: 'Free Online JavaScript Validator & Syntax Checker',
+  introduction: `Validate JavaScript code online, detect syntax errors, and fix broken scripts instantly. 100% client-side, free, and secure.`,
+
+  features: [
+    {
+      title: 'Instant Syntax Validation',
+      description: 'Quickly evaluate JavaScript code blocks for unexpected tokens, missing parentheses, and syntax mistakes.'
+    },
+    {
+      title: 'Detailed Error Logs',
+      description: 'Get precise line numbers and clear error descriptions to quickly debug broken scripts.'
+    },
+    {
+      title: 'Multiple Input Methods',
+      description: 'Paste direct code, load a remote .js script via URL, or upload local files.'
+    },
+    {
+      title: '100% Client-Side & Private',
+      description: 'Your JavaScript code runs locally inside your browser and is never uploaded to any server.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your JavaScript code into the left text box, or upload a .js file.',
+    'Click on the "Validate JS" button to check for syntax errors.',
+    'Review any detected syntax errors or warnings in the right-side result pane.',
+    'Fix highlighted mistakes and copy your valid script.'
+  ],
+
+  useCases: [
+    {
+      title: 'Debugging Web Scripts',
+      description: 'Find broken functions, missing closing braces, or unexpected tokens before deploying code.'
+    },
+    {
+      title: 'Snippet Auditing',
+      description: 'Verify tracking scripts, inline HTML JS snippets, and API callbacks.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Does this tool execute my JavaScript code?',
+      answer: 'No. It parses and validates the syntax without running the execution thread to prevent unsafe side effects.'
+    },
+    {
+      question: 'Can I upload large .js files?',
+      answer: 'Yes. Since processing happens client-side, execution is fast and limited only by your browser performance.'
+    }
+  ],
+
+  detailedGuide: `How Online JavaScript Syntax Validation Works
+
+JavaScript syntax validation parses raw code strings using structural language rules. It evaluates token sequences, function scopes, and block boundaries ({}, (), []). Any broken language structures generate line-indexed syntax errors without executing the script.`
+},
+'xml-validator': {
+  title: 'Free Online XML Validator & Syntax Checker',
+  introduction: `Validate XML files and code snippets online. Check for well-formedness, unclosed tags, attribute syntax errors, and structural issues instantly. 100% free and client-side.`,
+
+  features: [
+    {
+      title: 'Real-Time XML Parsing',
+      description: 'Uses native browser DOMParser to validate strict XML well-formedness and tree structure.'
+    },
+    {
+      title: 'Detailed Error Feedback',
+      description: 'Get clear diagnostic error messages detailing missing tags, attribute typos, or broken markup.'
+    },
+    {
+      title: 'Multiple Input Methods',
+      description: 'Paste direct XML, fetch a remote XML file via URL, or upload local .xml documents.'
+    },
+    {
+      title: '100% Client-Side & Private',
+      description: 'Your XML data remains private and secure. All processing happens locally in your browser.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your XML markup into the input text box, or upload an .xml file.',
+    'Click on the "Validate XML" button to run structural parsing.',
+    'Review the validation status and error logs in the right-side result pane.',
+    'Fix any reported tag or attribute errors and copy your clean XML.'
+  ],
+
+  useCases: [
+    {
+      title: 'Sitemap & Feed Verification',
+      description: 'Check RSS feeds, Atom feeds, and Google XML sitemaps for syntax compliance before uploading.'
+    },
+    {
+      title: 'API Payload Testing',
+      description: 'Validate SOAP or REST XML request and response structures during backend development.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'What does "well-formed XML" mean?',
+      answer: 'Well-formed XML satisfies strict structural rules: it has a single root element, correctly matched opening and closing tags, proper nesting, and quoted attributes.'
+    },
+    {
+      question: 'Is my XML sent to an external server?',
+      answer: 'No. All parsing runs directly in your web browser using JavaScript DOMParser APIs.'
+    }
+  ],
+
+  detailedGuide: `How Online XML Parsing and Validation Works
+
+XML validation uses standard XML DOMParser mechanisms to construct a Document Object Model tree from raw markup string input. If the parser encounters structural defects—such as mismatched closing tags, unquoted attribute values, or illegal special characters—it halts tree construction and outputs parse error nodes specifying the structural failure.`
+},
+'yaml-validator': {
+  title: 'Free Online YAML Validator & Linting Tool',
+  introduction: `Validate YAML configuration files and code blocks online. Detect indentation errors, syntax issues, unclosed quotes, and invalid key-value mappings instantly. 100% free and client-side.`,
+
+  features: [
+    {
+      title: 'Instant Syntax Validation',
+      description: 'Find invalid indentation, missing colons, and malformed YAML keys as you paste or type.'
+    },
+    {
+      title: 'Detailed Indentation & Line Reporting',
+      description: 'Get precise line numbers and clear error descriptions to quickly fix configuration files.'
+    },
+    {
+      title: 'Multiple Input Options',
+      description: 'Paste direct YAML strings, load remote .yaml/.yml files via URL, or upload local files.'
+    },
+    {
+      title: '100% Client-Side & Private',
+      description: 'Your YAML data stays in your browser and is never stored or sent to external servers.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your YAML code into the input text box or upload a .yaml/.yml file.',
+    'Click on the "Validate YAML" button to execute syntax checks.',
+    'Review any detected syntax or indentation errors in the right-side result box.',
+    'Fix the identified errors and copy your clean YAML configuration.'
+  ],
+
+  useCases: [
+    {
+      title: 'Docker & Kubernetes Configurations',
+      description: 'Check docker-compose.yml and Kubernetes deployment manifests before applying them.'
+    },
+    {
+      title: 'CI/CD Pipelines',
+      description: 'Validate GitHub Actions workflows, GitLab CI, or OpenAPI / Swagger specs.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Why is YAML sensitive to indentation?',
+      answer: 'YAML relies on whitespace indentation to structure blocks and parent-child relationships instead of brackets or braces.'
+    },
+    {
+      question: 'Is my configuration data stored anywhere?',
+      answer: 'No. All validation runs client-side inside your browser environment.'
+    }
+  ],
+
+  detailedGuide: `How Client-Side YAML Validation Works
+
+YAML validation checks indentation consistency, key-value mappings, list item syntax, and valid scalar types. Common errors caught include using tab characters instead of spaces for indentation, missing colons after keys, and improper list hyphens.`
+},
+'heic-to-jpg': {
+  title: 'Free Online HEIC to JPG / JPEG Converter',
+  introduction: `Convert iPhone and iPad HEIC photos into widely compatible JPG images instantly. 100% free, fast, and runs locally in your browser.`,
+
+  features: [
+    {
+      title: 'High Quality Output',
+      description: 'Preserve full resolution and color fidelity while converting HEIC photos to JPEG.'
+    },
+    {
+      title: 'Instant Local Conversion',
+      description: 'Images are processed directly inside your browser without uploading to any external server.'
+    },
+    {
+      title: 'Multiple File Handling',
+      description: 'Upload files via local storage, file drag-and-drop, or remote image URL.'
+    },
+    {
+      title: '100% Secure & Private',
+      description: 'Your personal photos remain private on your device at all times.'
+    }
+  ],
+
+  howToUse: [
+    'Select or drop your .heic file into the upload box.',
+    'Click on the "Convert to JPG" button to process the image.',
+    'Preview the converted JPG image in the right pane.',
+    'Click "Download JPG" to save the file to your device.'
+  ],
+
+  useCases: [
+    {
+      title: 'iPhone Photo Sharing',
+      description: 'Convert iOS HEIC photos to JPG so they can be viewed on Windows, Android, or old software.'
+    },
+    {
+      title: 'Web Uploads',
+      description: 'Prepare Apple camera photos for websites, online forms, and portals that only accept JPG/PNG.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'What is a HEIC file?',
+      answer: 'HEIC (High Efficiency Image Container) is the default image format used by Apple devices for high compression.'
+    },
+    {
+      question: 'Are my photos uploaded to any server?',
+      answer: 'No. All conversion logic runs completely inside your browser using JavaScript.'
+    }
+  ],
+
+  detailedGuide: `How Client-Side HEIC to JPG Conversion Works
+
+HEIC images use advanced compression codecs that native browsers cannot render directly. The converter utilizes JS decoding libraries (heic2any) to unpack HEIC image buffers into standard bitmap canvas contexts, then re-encodes them into widely supported JPEG image data URLs.`
+},
+ 
 };
 

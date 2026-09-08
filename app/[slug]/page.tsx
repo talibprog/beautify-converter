@@ -31,6 +31,14 @@ import ImageToPrompt from '@/components/ImageToPrompt';
 import SvgToReact from '@/components/SvgToReact';
 import CryptoWalletChecker from '@/components/CryptoWalletChecker';
 import PdfToImage from '@/components/PdfToImage';
+import ImageConverterCompressor from '@/components/ImageConverterCompressor';
+import BioLinkGenerator from '@/components/BioLinkGenerator';
+import EmiCalculator from '@/components/EmiCalculator';
+import CssValidator from '@/components/CssValidator';
+import JavaScriptValidator from '@/components/JavaScriptValidator';
+import XmlValidator from '@/components/XmlValidator';
+import YamlValidator from '@/components/YamlValidator';
+import HeicToJpg from '@/components/HeicToJpg';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -63,6 +71,14 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'svg-to-react': SvgToReact,
   'crypto-wallet-checker': CryptoWalletChecker,
   'pdf-to-image': PdfToImage,
+  'image-converter-compressor': ImageConverterCompressor,
+  'bio-link-generator': BioLinkGenerator,
+  'emi-calculator': EmiCalculator,
+  'css-validator': CssValidator,
+  'javascript-validator': JavaScriptValidator,
+  'xml-validator': XmlValidator,
+  'yaml-validator': YamlValidator,
+  'heic-to-jpg': HeicToJpg,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
