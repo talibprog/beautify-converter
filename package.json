@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start",
+    "dev": "next dev",
+    "build": "next build && shx cp -r .next/static .next/standalone/.next/ && shx cp -r public .next/standalone/",
+    "start": "node .next/standalone/server.js",
     "lint": "eslint"
   },
   "dependencies": {
