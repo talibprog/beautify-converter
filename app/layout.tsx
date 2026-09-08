@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -18,7 +19,11 @@ export const metadata: Metadata = {
   description: "Fast, secure, client-side web tools. Format JSON, minification tools, network calculators, and converters.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
@@ -32,6 +37,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="flex-1">
           {children}
         </div>
+
+        {/* GOOGLE ANALYTICS */}
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
       </body>
     </html>
   );
