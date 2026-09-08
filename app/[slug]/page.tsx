@@ -39,6 +39,7 @@ import JavaScriptValidator from '@/components/JavaScriptValidator';
 import XmlValidator from '@/components/XmlValidator';
 import YamlValidator from '@/components/YamlValidator';
 import HeicToJpg from '@/components/HeicToJpg';
+import RandomPasswordGenerator from '@/components/RandomPasswordGenerator';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -79,6 +80,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'xml-validator': XmlValidator,
   'yaml-validator': YamlValidator,
   'heic-to-jpg': HeicToJpg,
+  'random-password-generator': RandomPasswordGenerator,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

@@ -266,7 +266,13 @@ export const TOOLS: Tool[] = [
     category: "Image Converters",
     description: "Convert Apple HEIC photos to standard JPG format instantly in your browser without quality loss.",
   },
-  
+  {
+    id: "random-password-generator",
+    name: "Random Password Generator",
+    slug: "random-password-generator",
+    category: "Utilities",
+    description: "Generate strong, secure, and customizable random passwords instantly to protect your accounts.",
+  },
 ];
 
 // DYNAMIC CATEGORIES: Jo bhi category TOOLS array me hogi, auto-extract ho jayegi

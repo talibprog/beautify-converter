@@ -2187,6 +2187,61 @@ YAML validation checks indentation consistency, key-value mappings, list item sy
 
 HEIC images use advanced compression codecs that native browsers cannot render directly. The converter utilizes JS decoding libraries (heic2any) to unpack HEIC image buffers into standard bitmap canvas contexts, then re-encodes them into widely supported JPEG image data URLs.`
 },
- 
+ 'random-password-generator': {
+  title: 'Free Online Random Password Generator',
+  introduction: `Create strong, highly secure, and customized random passwords instantly. Protect your digital accounts with unique character combinations, custom lengths, and strength indicators. 100% free and client-side.`,
+
+  features: [
+    {
+      title: 'Cryptographically Secure',
+      description: 'Uses native browser window.crypto APIs to ensure unguessable, high-entropy password generation.'
+    },
+    {
+      title: 'Customizable Rules',
+      description: 'Include or exclude uppercase letters, lowercase letters, numbers, and special symbols based on your security requirements.'
+    },
+    {
+      title: 'Visual Strength Meter',
+      description: 'Instant feedback on password length and entropy strength to ensure maximum security.'
+    },
+    {
+      title: '100% Local & Private',
+      description: 'Generated passwords never leave your browser or get saved to any remote server.'
+    }
+  ],
+
+  howToUse: [
+    'Adjust the slider to choose your desired password length.',
+    'Toggle character options (Uppercase, Lowercase, Numbers, Symbols).',
+    'Click "Generate Password" to create a new secure string.',
+    'Click the "Copy" button to instantly copy the password to your clipboard.'
+  ],
+
+  useCases: [
+    {
+      title: 'Account Security',
+      description: 'Create unique passwords for new website registrations, email accounts, and financial services.'
+    },
+    {
+      title: 'Developer Testing',
+      description: 'Generate temporary credentials, API keys, or database secrets during application development.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is it safe to generate passwords online here?',
+      answer: 'Yes. All password generation happens completely inside your web browser using JavaScript. No passwords are ever transmitted or stored on a server.'
+    },
+    {
+      question: 'What makes a password strong?',
+      answer: 'A strong password is at least 12–16 characters long and includes a mix of uppercase letters, lowercase letters, numbers, and special symbols.'
+    }
+  ],
+
+  detailedGuide: `How Random Password Generation Works
+
+Password security relies on cryptographic randomness (entropy). This tool utilizes the Web Cryptography API (window.crypto.getRandomValues) to select random indices from your selected character pools, ensuring statistically uniform distribution and preventing predictable password patterns.`
+},
 };
 
