@@ -29,7 +29,7 @@ export default function PdfToImage() {
     }
   };
 
- const convertPdfToImages = async () => {
+  const convertPdfToImages = async () => {
     if (!file) {
       setError('Please select or upload a PDF file first.');
       return;
@@ -40,9 +40,11 @@ export default function PdfToImage() {
     setImages([]);
 
     try {
-      // @ts-ignore
+      // Dynamic import to prevent SSR canvas issues
       const pdfjsLib = await import('pdfjs-dist');
-      pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version || '3.11.174'}/build/pdf.worker.min.mjs`;
+      
+      // Fixed Worker CDN path matching installed version
+      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
 
       const arrayBuffer = await file.arrayBuffer();
       const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
