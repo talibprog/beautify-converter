@@ -34,7 +34,7 @@ export default function ExcelToPdf() {
 
     try {
       const XLSX = await import('xlsx');
-      const { jsPDF } = await import('jspdf');
+      const { jsPDF } = (await import('jspdf')) as any;
       const autoTableModule = await import('jspdf-autotable');
       const autoTable = autoTableModule.default || autoTableModule;
 

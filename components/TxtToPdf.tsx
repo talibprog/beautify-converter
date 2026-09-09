@@ -46,7 +46,7 @@ export default function TxtToPdf() {
     setError('');
 
     try {
-      const { jsPDF } = await import('jspdf');
+      const { jsPDF } = (await import('jspdf')) as any;
       const doc = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',

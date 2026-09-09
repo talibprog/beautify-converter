@@ -58,7 +58,7 @@ export default function ImagesToPdf() {
     setError('');
 
     try {
-      const { jsPDF } = await import('jspdf');
+      const { jsPDF } = (await import('jspdf')) as any;
       const pdf = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',

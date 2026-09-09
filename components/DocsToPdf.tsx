@@ -55,12 +55,13 @@ export default function DocsToPdf() {
     setError('');
 
     try {
-      const { jsPDF } = await import('jspdf');
-      const doc = new jsPDF({
+        const { jsPDF } = (await import('jspdf')) as any;
+
+        const doc = new jsPDF({
         orientation: 'portrait',
         unit: 'mm',
         format: 'a4',
-      });
+        });
 
       const margin = 15;
       const pageWidth = doc.internal.pageSize.getWidth() - margin * 2;
