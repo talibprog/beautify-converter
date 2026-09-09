@@ -2243,5 +2243,542 @@ HEIC images use advanced compression codecs that native browsers cannot render d
 
 Password security relies on cryptographic randomness (entropy). This tool utilizes the Web Cryptography API (window.crypto.getRandomValues) to select random indices from your selected character pools, ensuring statistically uniform distribution and preventing predictable password patterns.`
 },
+'images-to-pdf': {
+  title: 'Free Online Images to PDF Converter',
+  introduction: `Combine multiple JPG, PNG, or WebP images into a single clean PDF document within seconds. 100% free, private, and runs directly inside your browser.`,
+
+  features: [
+    {
+      title: 'Batch Image Processing',
+      description: 'Select or drag-and-drop multiple image files simultaneously to compile them into a unified PDF.'
+    },
+    {
+      title: 'Custom Page Layouts',
+      description: 'Automatically fit images to standard A4 page dimensions while maintaining exact aspect ratios.'
+    },
+    {
+      title: 'Secure Client-Side Conversion',
+      description: 'Your confidential documents and personal images never leave your local device.'
+    },
+    {
+      title: 'Instant Download',
+      description: 'Generate and download your final compiled PDF file with a single click.'
+    }
+  ],
+
+  howToUse: [
+    'Click or drag multiple image files into the upload dropzone.',
+    'Review or remove selected images from the sequence list.',
+    'Click "Convert to PDF" to compile all images into a single file.',
+    'Download your newly created PDF document instantly.'
+  ],
+
+  useCases: [
+    {
+      title: 'Document Archiving',
+      description: 'Scan receipts, handwritten notes, or paper documents with your phone and compile them into an orderly PDF archive.'
+    },
+    {
+      title: 'Portfolio & Presentation Sharing',
+      description: 'Bundle design screenshots or artwork into a shareable, professional PDF presentation.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Are my images uploaded to any external server?',
+      answer: 'No. All PDF compiling and image rendering happen entirely inside your browser using client-side JavaScript.'
+    },
+    {
+      question: 'Is there a limit on how many images I can convert?',
+      answer: 'There are no strict limits, though performance depends on your device memory when processing very large image batches.'
+    }
+  ],
+
+  detailedGuide: `How Client-Side Images to PDF Conversion Works
+
+This tool utilizes modern browser canvas APIs alongside specialized PDF generation modules (jsPDF) to scale images to standard page dimensions, embedding them sequentially into a single downloadable PDF binary container without server intervention.`
+},
+'docs-to-pdf': {
+  title: 'Free Online DOCX to PDF Converter - Convert Word Files Instantly',
+  introduction: `In today's digital workflow, portable document format (PDF) files have become the global standard for exchanging professional documentation, formal contracts, academic assignments, and business reports. While word processors like Microsoft Word, Google Docs, and LibreOffice are ideal for creating and editing drafts, sharing files in native .docx or .txt formats often leads to frustrating visual inconsistencies. Different operating systems, missing system fonts, and varying screen resolutions can scramble your carefully formatted line breaks, margins, and paragraph structures. Converting your word documents into fixed-layout PDF files guarantees that your recipient views the document exactly as you intended, regardless of the device, software, or operating system they use.
+
+Our free online DOCX to PDF converter simplifies this conversion process by offering a seamless, lightning-fast, and entirely client-side transformation utility. Designed specifically for privacy-conscious professionals, students, freelancers, and enterprise users, this tool eliminates the need to upload sensitive documents to remote third-party servers. Traditional online file converters require you to send confidential contracts, financial sheets, or personal resumes over the internet to cloud servers where they are processed and stored temporarily. In contrast, our advanced browser-based tool parses and renders your document structure locally within your web browser using modern JavaScript engines. Your private data never leaves your device, providing bank-grade security and zero risk of data leaks.
+
+Additionally, our utility eliminates software dependency. You no longer need heavy desktop software installations or active office suite subscriptions just to export a simple document to PDF. Whether you are working from a mobile phone, a restricted corporate workstation, or a Chromebook, you can upload your document, instantly preview the rendered layout, adjust conversion parameters, and generate a downloadable PDF in seconds. Experience zero latency, unlimited file conversions, complete file privacy, and clean, high-precision PDF document output—all 100% free with no registration or hidden fees.`,
+
+  features: [
+    {
+      title: '100% Local Browser Conversion',
+      description: 'Your word documents are parsed and converted locally using browser execution engines, guaranteeing total privacy.'
+    },
+    {
+      title: 'Preserves Layout & Structure',
+      description: 'Maintains headings, paragraph spacing, line wraps, and textual hierarchies during the DOCX-to-PDF generation.'
+    },
+    {
+      title: 'Instant Download',
+      description: 'Generates optimized PDF binaries in real time so you can download your document without waiting for server queues.'
+    },
+    {
+      title: 'Cross-Platform Compatibility',
+      description: 'Works seamlessly on Windows, macOS, Linux, iOS, and Android without requiring Microsoft Office or third-party plugins.'
+    }
+  ],
+
+  howToUse: [
+    'Click the dropzone or drag and drop your Word document (.docx or .txt) into the upload area.',
+    'Review the extracted text content and structure in the live browser preview panel.',
+    'Click the "Convert to PDF" button to initiate the local client-side compilation.',
+    'Click "Download PDF" to save the finalized document directly to your device storage.'
+  ],
+
+  useCases: [
+    {
+      title: 'Resume & CV Distribution',
+      description: 'Convert draft resumes into standardized PDFs before submitting job applications to ensure formatting remains pristine.'
+    },
+    {
+      title: 'Business Contracts & Agreements',
+      description: 'Lock text formatting and prevent accidental edits by converting draft agreements into finalized PDF formats.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is my confidential document safe when using this tool?',
+      answer: 'Yes. The entire conversion process runs strictly inside your web browser using client-side JavaScript. No document data is ever uploaded to external cloud servers.'
+    },
+    {
+      question: 'Which file formats are currently supported?',
+      answer: 'This utility supports Microsoft Word (.docx) files as well as plain text (.txt) files.'
+    }
+  ],
+
+  detailedGuide: `How Client-Side DOCX to PDF Parsing Works
+
+This utility uses client-side parsing libraries (such as Mammoth.js) to unpack the XML structure of a .docx file inside browser memory. It extracts raw text nodes, headings, and lists, then maps them into a standard A4 page grid using jsPDF to output a standalone, structured PDF document binary.`
+},
+'txt-to-pdf': {
+  title: 'Free Online TXT to PDF Converter - Convert Plain Text Files Instantly',
+  introduction: `Plain text files (.txt) are widely used across software development, note-taking applications, log tracking, and basic document drafting due to their lightweight structure and universal compatibility. However, when sharing raw text files with clients, colleagues, or academic institutions, plain text lacks structured page layout, consistent typography, margin definitions, and print formatting. Sending raw .txt files can lead to unpredictable rendering across different operating systems, devices, or text editor preferences. Converting your plain text content into a standard PDF format locks your content into an immutable, beautifully paginated document ready for official distribution and printing.
+
+Our free online TXT to PDF converter provides an instant, browser-native transformation mechanism that converts raw text files into crisp, standardized PDF documents. Engineered with strict privacy standards in mind, this utility operates completely client-side using JavaScript execution engines. Unlike conventional cloud converters that require uploading confidential notes, log reports, or source code files to external servers, our tool processes all text parsing and binary generation locally inside your web browser. Your private data never touches remote infrastructure, protecting sensitive information from external security risks.
+
+In addition to maximum data privacy, this utility gives you full freedom from desktop software installations or office suit subscriptions. Whether you are working on a smartphone, desktop workstation, or restricted enterprise machine, you can paste raw text directly or upload existing .txt files, customize the font styling and page margins, preview the extracted content, and export a clean PDF document within seconds. Experience rapid performance, zero processing queues, unlimited file conversions, and pristine PDF page rendering—100% free with no account registration required.`,
+
+  features: [
+    {
+      title: '100% Private Client-Side Conversion',
+      description: 'All text parsing and PDF compilation happen locally in your web browser. No text or file data is ever uploaded to remote servers.'
+    },
+    {
+      title: 'Direct Text Editor & File Input',
+      description: 'Upload existing .txt files or directly type and edit raw text within the live browser editor before compiling your PDF.'
+    },
+    {
+      title: 'Custom Font & Page Settings',
+      description: 'Adjust page orientation, font sizes, line heights, and margin spacing to ensure your text fits neatly on standard A4 pages.'
+    },
+    {
+      title: 'Instant Local Download',
+      description: 'Generates optimized PDF binary streams instantly without server processing delays or queues.'
+    }
+  ],
+
+  howToUse: [
+    'Upload a .txt file or paste your raw text into the interactive editor text area.',
+    'Configure preferred font sizing, line height, and page margin options if needed.',
+    'Click the "Convert to PDF" button to execute client-side PDF rendering.',
+    'Click "Download PDF" to instantly save your finalized document to your device.'
+  ],
+
+  useCases: [
+    {
+      title: 'Log File & Code Export',
+      description: 'Convert application logs, system diagnostics, or plain text code snippets into easy-to-read, archived PDF documents.'
+    },
+    {
+      title: 'Meeting Notes & Draft Articles',
+      description: 'Transform quick notepad ideas, meeting transcripts, or essay drafts into formal PDF files for sharing.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is my plain text data secure during conversion?',
+      answer: 'Yes. The entire text-to-PDF conversion runs locally inside your browser runtime. No text data is ever stored, logged, or sent across the network.'
+    },
+    {
+      question: 'Is there a limit on file size or page count?',
+      answer: 'There are no strict file size limits. The tool dynamically handles multi-page line wrapping and pagination based on your text length.'
+    }
+  ],
+
+  detailedGuide: `How Client-Side Plain Text to PDF Conversion Works
+
+This tool utilizes jsPDF inside browser memory to break continuous text strings into wrapped lines calculated against standard A4 dimensions. It manages cursor coordinates, page heights, line heights, and margin bounds to output a well-formatted PDF file binary.`
+},
+'pdf-to-docx': {
+  title: 'Free Online PDF to Word (DOCX) Converter',
+  introduction: `Converting static PDF documents into editable Word (.docx) files is essential for editing contracts, academic papers, and business forms. Our browser-based PDF to Word converter extracts text content securely in your local environment, protecting your files from privacy leaks on third-party cloud servers. Enjoy unlimited, fast conversions without installing heavy desktop software.`,
+
+  features: [
+    {
+      title: '100% Client-Side Processing',
+      description: 'Your PDFs are processed entirely within your browser memory. No files are uploaded to external servers.'
+    },
+    {
+      title: 'Direct DOCX Generation',
+      description: 'Outputs standard Microsoft Word compatible documents maintaining clean paragraph spacing.'
+    },
+    {
+      title: 'Instant Download',
+      description: 'Get your converted document ready for editing within seconds.'
+    }
+  ],
+
+  howToUse: [
+    'Upload your target PDF document using the file picker.',
+    'Click the "Convert to Word" button to initiate text extraction.',
+    'Download your generated .docx file instantly.'
+  ],
+
+  useCases: [
+    {
+      title: 'Editing Formats',
+      description: 'Quickly modify locked text content, agreements, or reports.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is my data secure?',
+      answer: 'Yes, because conversion runs locally in your browser.'
+    }
+  ],
+
+  detailedGuide: `This tool parses text strings layer by layer from PDF files using PDF.js and structures them into clean paragraphs using the docx library.`
+},
+'unlock-pdf': {
+  title: 'Free Online Unlock PDF – Remove Passwords & Security Restrictions',
+  introduction: `In today’s digital-first environment, security measures like document encryption are vital for protecting sensitive financial statements, legal agreements, corporate contracts, and personal records. However, encountering a password-protected PDF when you need to quickly review, print, edit, or share information can severely disrupt your workflow and productivity. Whether you have legally forgotten your own document security key, need to streamline administrative processes, or require seamless access to archived documentation across multiple devices, our free online Unlock PDF tool provides an ultra-fast, secure, and privacy-focused solution. Designed specifically for modern web users, students, researchers, and busy professionals who manage large volumes of digital documents daily, this advanced browser-based utility allows you to remove security restrictions and open password-protected PDF files instantly without ever compromising your data privacy. Traditional cloud-based PDF conversion and decryption platforms often require you to upload confidential or proprietary files to external remote servers, exposing your sensitive information to severe security vulnerabilities, potential data leaks, and unauthorized tracking. In stark contrast, our cutting-edge client-side architecture guarantees that your sensitive documents never leave your local machine or browser cache. Every single decryption process executes directly within your browser sandbox utilizing powerful, battle-tested JavaScript libraries, ensuring absolute confidentiality from start to finish. Furthermore, this intuitive tool completely eliminates the frustration of tedious software installations, complex desktop setups, operating system compatibility issues, or expensive monthly subscription fees. Whether you are working on a Windows PC, Mac, Linux workstation, or even a mobile smartphone, our fully responsive platform adapts seamlessly to your environment. By leveraging advanced web technologies, you can easily bypass permission passwords, strip restrictive owner locks, and transform heavily encrypted PDFs into fully accessible, editable, and shareable files within mere seconds. Experience lightning-fast processing speeds, uncompromising enterprise-grade security, and effortless document management today with our reliable, free online PDF password remover.`,
+
+  features: [
+    {
+      title: '100% Client-Side Decryption',
+      description: 'Your PDFs are processed entirely in your browser memory. Files are never uploaded to any external server.'
+    },
+    {
+      title: 'Instant Password Removal',
+      description: 'Quickly strip out known open passwords or document security permissions with a single click.'
+    },
+    {
+      title: 'No Installation Required',
+      description: 'Works instantly on any modern browser across Windows, macOS, Linux, and mobile devices.'
+    }
+  ],
+
+  howToUse: [
+    'Upload your password-protected PDF document using the file picker.',
+    'Enter the correct document password if required to unlock the content.',
+    'Click the "Unlock PDF" button to process and download your clean, unrestricted file.'
+  ],
+
+  useCases: [
+    {
+      title: 'Administrative Workflows',
+      description: 'Remove repetitive password prompts when processing official documents or client files.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Do I need to know the original password?',
+      answer: 'Yes, you must provide the correct password set on the PDF to successfully decrypt and remove restrictions.'
+    },
+    {
+      question: 'Are my files stored anywhere?',
+      answer: 'No. Everything runs locally in your browser memory via client-side code, ensuring total privacy.'
+    }
+  ],
+
+  detailedGuide: `This tool utilizes client-side PDF processing engines like pdf-lib to load encrypted files, decrypt them using the provided password, and save an unencrypted, fully accessible copy directly to your device.`
+},
+'compress-pdf': {
+  title: 'Free Online Compress PDF – Reduce PDF File Size Securely',
+  introduction: `In an era where digital documentation dictates professional, academic, and personal communication, managing file sizes has become an essential daily task. Large, bulky PDF files often clog email attachments, fail strict web upload size limits on government or university portals, and consume precious storage space across cloud drives and local hardware. Whether you are submitting a digital job application, uploading financial statements to a banking portal, archiving corporate invoices, or sharing high-resolution design portfolios with clients, encountering file size restrictions can severely interrupt your workflow. 
+  
+  Our free online Compress PDF tool is engineered precisely to resolve this challenge, offering a lightning-fast, highly secure, and privacy-first solution that reduces your document size within seconds. Unlike traditional cloud-based compression utilities that force you to upload sensitive contracts, legal documents, or proprietary business files to remote, third-party servers—exposing you to potential data breaches, unauthorized tracking, and severe security risks—our advanced browser-based utility operates entirely on your local machine. By leveraging cutting-edge client-side technology, your PDF documents are processed securely inside your browser's private sandbox memory, ensuring absolute confidentiality and complete data privacy from start to finish. 
+  
+  Furthermore, our platform completely eliminates the hassle of downloading heavy desktop software, managing complicated operating system dependencies, or paying expensive monthly subscription fees for premium file optimization tools. Whether you are using a Windows desktop, a macOS laptop, a Linux workstation, or a mobile smartphone, our responsive interface adapts effortlessly to your device. By optimizing internal document structures and stripping out redundant metadata, our tool significantly shrinks your PDF files while maintaining optimal readability and visual clarity. Experience seamless document optimization, uncompromising enterprise-grade security, and lightning-fast processing speeds today with our reliable, free online PDF compressor.`,
+
+  features: [
+    {
+      title: '100% Client-Side Processing',
+      description: 'Your PDFs are optimized directly in your browser. No files are ever sent or stored on external servers.'
+    },
+    {
+      title: 'Object Stream Optimization',
+      description: 'Utilizes advanced PDF restructuring techniques to significantly decrease file size instantly.'
+    },
+    {
+      title: 'Free & Unlimited',
+      description: 'Compress as many documents as you need without any registration or hidden fees.'
+    }
+  ],
+
+  howToUse: [
+    'Upload your target PDF document using the file picker.',
+    'Click the "Compress PDF" button to optimize document structures.',
+    'Download your reduced PDF file instantly.'
+  ],
+
+  useCases: [
+    {
+      title: 'Email & Portal Uploads',
+      description: 'Easily fit large documents under strict email attachment or portal size limits.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Will my PDF quality drop?',
+      answer: 'Our compressor optimizes internal data streams and removes redundancies while keeping document contents fully legible.'
+    },
+    {
+      question: 'Is my data secure?',
+      answer: 'Yes, because all processing occurs locally inside your browser memory.'
+    }
+  ],
+
+  detailedGuide: `This tool utilizes client-side pdf-lib optimization features, repackaging PDF object streams to achieve efficient compression entirely offline.`
+},
+'excel-to-pdf': {
+  title: 'Free Online Excel to PDF Converter – XLSX to PDF Fast & Secure',
+  introduction: `In corporate, academic, and administrative operations, Excel spreadsheets are the gold standard for managing complex financial models, data analytics, tracking inventories, and organizing project schedules. However, sharing raw spreadsheets with clients, managers, or external stakeholders often leads to layout distortions, missing gridlines, broken cell formatting, or unauthorized formula editing. Converting your spreadsheet into a fixed-layout PDF document guarantees that your numerical reports, tabular summaries, and visual layouts display uniformly across all operating systems and digital screens. Our free online Excel to PDF converter offers a seamless, fast, and privacy-first solution that renders your Excel workbooks into crisp, printable PDF documents within seconds. Unlike traditional cloud conversion services that upload your sensitive financial metrics, customer database records, or proprietary business figures to external, third-party remote servers—exposing your sensitive data to privacy risks and unauthorized leaks—our advanced client-side application handles all processing directly inside your local web browser. By leveraging powerful client-side parsing libraries, your Excel data never leaves your personal device memory, ensuring absolute security and enterprise-grade confidentiality from start to finish. Additionally, our intuitive web app eliminates the hassle of downloading heavy desktop software, managing license keys, or dealing with cross-platform compatibility issues between Windows, Mac, and Linux systems. Whether you are generating monthly invoices, exporting project budget reports, or preparing quarterly audit sheets, our tool renders structured tables and text cleanly into standard PDF pages. Enjoy high-speed conversion, complete privacy protection, and effortless document management today with our reliable, browser-based Excel to PDF converter.`,
+
+  features: [
+    {
+      title: '100% Client-Side Privacy',
+      description: 'Your spreadsheets are converted locally in your browser memory. No files are ever sent to external cloud servers.'
+    },
+    {
+      title: 'XLSX & XLS Support',
+      description: 'Parses both modern Microsoft Excel .xlsx workbooks and legacy .xls spreadsheets smoothly.'
+    },
+    {
+      title: 'Clean Printable Layout',
+      description: 'Generates structured PDF pages featuring formatted data tables with clean borders and page pagination.'
+    }
+  ],
+
+  howToUse: [
+    'Upload your Excel spreadsheet (.xlsx or .xls) using the file picker.',
+    'Click the "Convert to PDF" button to trigger the client-side parsing.',
+    'Download your rendered PDF file instantly.'
+  ],
+
+  useCases: [
+    {
+      title: 'Reporting & Invoicing',
+      description: 'Convert financial statements and billing sheets into read-only PDF format before emailing stakeholders.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Are my financial spreadsheets safe?',
+      answer: 'Yes, because conversion takes place entirely inside your local browser memory.'
+    },
+    {
+      question: 'Do I need Microsoft Office installed?',
+      answer: 'No, this tool processes files entirely using web technology inside any modern browser.'
+    }
+  ],
+
+  detailedGuide: `This tool uses SheetJS (xlsx) to read row and column cell values from uploaded workbooks, then constructs clean tabular PDF pages using jsPDF and jspdf-autotable.`
+},
+'python-online-compiler': {
+  title: 'Free Online Python Compiler & Interpreter – Run Python Code',
+  introduction: `Writing and testing Python code shouldn't require heavy local installations or complicated environment setups. Our free online Python compiler lets you write, test, and run scripts instantly inside your web browser. Powered by secure execution engines, our platform handles standard I/O streams and immediate error logging, making it an ideal companion for beginners learning syntax, students practicing data structures, and developers prototyping quick algorithms. Enjoy a clean, responsive coding interface with zero configuration required.`,
+
+  features: [
+    {
+      title: 'Instant Execution',
+      description: 'Run Python 3 scripts securely with real-time console outputs.'
+    },
+    {
+      title: 'Zero Configuration',
+      description: 'No need to install python runtimes, pip packages, or virtual environments locally.'
+    },
+    {
+      title: '100% Free & Accessible',
+      description: 'Access a reliable sandbox environment anytime from any device.'
+    }
+  ],
+
+  howToUse: [
+    'Write or paste your Python code into the editor area.',
+    'Click the "Run Python" button to execute your script.',
+    'Inspect the output instantly in the terminal console below.'
+  ],
+
+  useCases: [
+    {
+      title: 'Learning & Debugging',
+      description: 'Quickly check Python syntax, test functions, and practice coding challenges.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is this compiler free?',
+      answer: 'Yes, you can execute code unlimited times for free.'
+    },
+    {
+      question: 'Which Python version is used?',
+      answer: 'The compiler runs on Python 3.10.'
+    }
+  ],
+
+  detailedGuide: `This tool leverages the public Piston API to securely execute Python 3 scripts in an isolated sandbox environment.`
+},
+'income-tax-calculator': {
+  title: 'Global Income Tax Calculator – Calculate Salary & Tax Across Countries',
+  introduction: `Understanding your net take-home salary after taxes is crucial whether you are working locally, freelancing internationally, or considering a job offer abroad. Tax slabs, social security contributions, standard deductions, and progressive tax rates vary significantly from country to country. Our free online Global Income Tax Calculator simplifies these complex financial systems into an instant, interactive tool. Select your country, enter your gross annual or monthly income, and choose applicable tax regimes or filing statuses to receive a detailed breakdown of your tax obligations, effective tax rates, and net take-home pay. Engineered with client-side privacy, all financial inputs stay entirely in your web browser.`,
+
+  features: [
+    {
+      title: 'Multi-Country Tax Support',
+      description: 'Supports tax calculations for major global economies including USA, India, UK, Canada, Australia, Germany, UAE, and more.'
+    },
+    {
+      title: 'Regime & Filing Options',
+      description: 'Account for specific national rules like New vs. Old Tax Regimes in India, or Single/Married status in the US.'
+    },
+    {
+      title: 'Detailed Tax Breakup',
+      description: 'View effective tax rates, highest marginal tax brackets, monthly take-home salary, and itemized tax liabilities.'
+    }
+  ],
+
+  howToUse: [
+    'Select your country from the dropdown menu.',
+    'Enter your total income and choose whether it is Annual or Monthly.',
+    'Configure country-specific options (e.g., Filing Status or Tax Regime).',
+    'Inspect the automatic breakdown of your tax liability and net take-home pay.'
+  ],
+
+  useCases: [
+    {
+      title: 'Salary & Offer Comparison',
+      description: 'Compare net take-home pay across different international job offers and tax regimes.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is my financial data secure?',
+      answer: 'Yes, all calculations run 100% locally in your browser. No income data is sent or saved on remote servers.'
+    },
+    {
+      question: 'Are local or state taxes included?',
+      answer: 'The calculator estimates primary federal/national income taxes and standard social contributions.'
+    }
+  ],
+
+  detailedGuide: `This interactive calculator applies progressive income tax bracket algorithms tailored to each selected country's latest fiscal rules, calculating effective rates, standard deductions, and net monthly distributions.`
+},
+'regex-tester': {
+  title: 'Free Online Regex Tester & Debugger – Test Regular Expressions',
+  introduction: `Regular expressions (RegEx) are powerful patterns used for pattern matching, data validation, string parsing, and text searching across programming languages. However, writing and debugging complex regular expressions can quickly become frustrating without immediate visual feedback. Our free online Regex Tester and Debugger provides an interactive, real-time environment to test your regex patterns against any sample text. Easily toggle flags like global matching, case insensitivity, and multiline mode while instantly inspecting matched groups, indexes, and substitution replacements. Built with 100% client-side execution, your private text and data never leave your browser.`,
+
+  features: [
+    {
+      title: 'Real-Time Matching',
+      description: 'Instantly view matches, capture groups, and indices as you type your regex pattern or test string.'
+    },
+    {
+      title: 'Flag Toggles',
+      description: 'Quickly toggle standard flags including Global (g), Case-Insensitive (i), and Multiline (m).'
+    },
+    {
+      title: 'Substitution & Replacement',
+      description: 'Test string replacement patterns live to see how substitutions transform your input data.'
+    }
+  ],
+
+  howToUse: [
+    'Enter your regular expression pattern in the regex input field.',
+    'Select your desired regex flags (g, i, m, s).',
+    'Paste or type your test string into the subject text box to view live matches and details.'
+  ],
+
+  useCases: [
+    {
+      title: 'Form Validation & Parsing',
+      description: 'Verify email addresses, phone numbers, postal codes, and custom data formats during development.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is my test data private?',
+      answer: 'Yes, all regex matching runs locally in your browser memory.'
+    },
+    {
+      question: 'Which regex flavor is supported?',
+      answer: 'The tool uses standard JavaScript ECMAScript regular expression engine.'
+    }
+  ],
+
+  detailedGuide: `This tool utilizes standard JavaScript RegExp objects and match iterators to parse and highlight matches in real time.`
+},
+'site-ip-checker': {
+  title: 'Free Site IP Checker – Find Domain IP Address & Location',
+  introduction: `Every website hosted on the internet is resolved to a unique numerical Internet Protocol (IP) address that allows servers and web browsers to communicate. Whether you are performing DNS troubleshooting, migrating website servers, auditing web security, or conducting competitive intelligence, finding a domain's IP address quickly is crucial. Our free Site IP Checker tool resolves any web domain name into its primary IPv4 or IPv6 address and retrieves geolocation details such as server country, city, ISP/hosting vendor, and autonomous system number (ASN). Simply enter a URL or domain name to inspect domain resolution details instantly inside your web browser.`,
+
+  features: [
+    {
+      title: 'Instant DNS Resolution',
+      description: 'Quickly lookup IPv4 and IPv6 addresses associated with any web domain.'
+    },
+    {
+      title: 'Geolocation Lookup',
+      description: 'Discover the hosting location, country, city, and ISP/hosting provider of the server.'
+    },
+    {
+      title: '100% Free & Fast',
+      description: 'Perform unlimited domain IP lookups with zero registration or API limits.'
+    }
+  ],
+
+  howToUse: [
+    'Enter a domain name or URL (e.g., example.com or https://example.com) into the input box.',
+    'Click the "Check IP" button to perform DNS resolution.',
+    'View the IP address, country, ISP, and hosting server details instantly.'
+  ],
+
+  useCases: [
+    {
+      title: 'Server Migration & DNS Testing',
+      description: 'Verify if a domain DNS propagation has updated to point to a new web server IP.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is this IP checker tool free?',
+      answer: 'Yes, you can check unlimited domains for free.'
+    },
+    {
+      question: 'Can I enter full URLs with https://?',
+      answer: 'Yes, the tool automatically cleans and extracts the hostname from URLs.'
+    }
+  ],
+
+  detailedGuide: `This tool queries Google DNS over HTTPS (DoH) and IP geolocation lookup services to securely resolve hostnames to IP addresses.`
+},
 };
 

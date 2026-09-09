@@ -43,8 +43,8 @@ export default function PdfToImage() {
       // Dynamic import to prevent SSR canvas issues
       const pdfjsLib = await import('pdfjs-dist');
       
-      // Fixed Worker CDN path matching installed version
-      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.mjs`;
+      // Stable Unpkg CDN worker path
+      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.js`;
 
       const arrayBuffer = await file.arrayBuffer();
       const loadingTask = pdfjsLib.getDocument({ data: arrayBuffer });
@@ -99,6 +99,7 @@ export default function PdfToImage() {
     setFile(null);
     setImages([]);
     setError('');
+    if (fileInputRef.current) fileInputRef.current.value = '';
   };
 
   return (

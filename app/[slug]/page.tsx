@@ -40,6 +40,17 @@ import XmlValidator from '@/components/XmlValidator';
 import YamlValidator from '@/components/YamlValidator';
 import HeicToJpg from '@/components/HeicToJpg';
 import RandomPasswordGenerator from '@/components/RandomPasswordGenerator';
+import ImagesToPdf from '@/components/ImagesToPdf';
+import DocsToPdf from '@/components/DocsToPdf';
+import TxtToPdf from '@/components/TxtToPdf';
+import PdfToDocx from '@/components/PdfToDocx';
+import UnlockPdf from '@/components/UnlockPdf';
+import CompressPdf from '@/components/CompressPdf';
+import ExcelToPdf from '@/components/ExcelToPdf';
+import PythonCompiler from '@/components/PythonCompiler';
+import IncomeTaxCalculator from '@/components/IncomeTaxCalculator';
+import RegexTester from '@/components/RegexTester';
+import SiteIpChecker from '@/components/SiteIpChecker';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -81,6 +92,17 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'yaml-validator': YamlValidator,
   'heic-to-jpg': HeicToJpg,
   'random-password-generator': RandomPasswordGenerator,
+  'images-to-pdf': ImagesToPdf,
+  'docs-to-pdf': DocsToPdf,
+  'txt-to-pdf': TxtToPdf,
+  'pdf-to-docx': PdfToDocx,
+  'unlock-pdf': UnlockPdf,
+  'compress-pdf': CompressPdf,
+  'excel-to-pdf': ExcelToPdf,
+  'python-online-compiler': PythonCompiler,
+  'income-tax-calculator': IncomeTaxCalculator,
+  'regex-tester': RegexTester,
+  'site-ip-checker': SiteIpChecker,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
