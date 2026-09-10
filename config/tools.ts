@@ -350,6 +350,34 @@ export const TOOLS: Tool[] = [
     category: "IP & Domain",
     description: "Find the IP address, hosting location, and server details of any domain name instantly.",
   },
+  {
+    id: "xml-to-json-converter",
+    name: "XML to JSON Converter",
+    slug: "xml-to-json-converter",
+    category: "Converters",
+    description: "Convert XML data into clean, formatted JSON format instantly with real-time validation and download options.",
+  },
+  {
+    id: "xml-to-sql-converter",
+    name: "XML to SQL Converter",
+    slug: "xml-to-sql-converter",
+    category: "Converters",
+    description: "Convert XML data into SQL INSERT statements instantly. Generate clean SQL queries for MySQL, PostgreSQL, and SQL Server.",
+  },
+  {
+    id: "text-to-html-converter",
+    name: "Text to HTML Converter",
+    slug: "text-to-html-converter",
+    category: "Converters",
+    description: "Convert plain text into clean HTML markup with automatic paragraph tags, line breaks, and formatting instantly.",
+  },
+  {
+    id: "html-js-css-filter",
+    name: "HTML, JS and CSS Filter",
+    slug: "html-js-css-filter",
+    category: "Converters",
+    description: "Strip HTML tags, JavaScript code, and CSS stylesheets online. Clean code or extract plain text instantly.",
+  }
 ];
 
 // DYNAMIC CATEGORIES: Jo bhi category TOOLS array me hogi, auto-extract ho jayegi

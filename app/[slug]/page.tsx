@@ -51,6 +51,10 @@ import PythonCompiler from '@/components/PythonCompiler';
 import IncomeTaxCalculator from '@/components/IncomeTaxCalculator';
 import RegexTester from '@/components/RegexTester';
 import SiteIpChecker from '@/components/SiteIpChecker';
+import XmlToJsonConverter from '@/components/XmlToJsonConverter';
+import XmlToSqlConverter from '@/components/XmlToSqlConverter';
+import TextToHtmlConverter from '@/components/TextToHtmlConverter';
+import HtmlJsCssFilter from '@/components/HtmlJsCssFilter';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -103,6 +107,10 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'income-tax-calculator': IncomeTaxCalculator,
   'regex-tester': RegexTester,
   'site-ip-checker': SiteIpChecker,
+  'xml-to-json-converter': XmlToJsonConverter,
+  'xml-to-sql-converter': XmlToSqlConverter,
+  'text-to-html-converter': TextToHtmlConverter,
+  'html-js-css-filter': HtmlJsCssFilter,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

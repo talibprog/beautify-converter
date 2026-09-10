@@ -2780,5 +2780,272 @@ This tool utilizes jsPDF inside browser memory to break continuous text strings 
 
   detailedGuide: `This tool queries Google DNS over HTTPS (DoH) and IP geolocation lookup services to securely resolve hostnames to IP addresses.`
 },
+'xml-to-json-converter': {
+  title: 'Free Online XML to JSON Converter – Fast & Secure Conversion',
+  introduction: `XML (Extensible Markup Language) and JSON (JavaScript Object Notation) are two of the most ubiquitous data interchange formats used in web APIs, legacy systems, configuration files, and software integration pipelines. Modern web and mobile applications predominantly rely on lightweight, human-readable JSON payloads. Our free online XML to JSON Converter streamlines data transformation by parsing complex XML structures—including attributes, nested nodes, CDATA, and text nodes—and converting them into clean, structured JSON objects instantly in your browser. Engineered with 100% client-side execution, your sensitive XML configuration files and API payloads remain completely secure and private without passing through remote servers.`,
+
+  features: [
+    {
+      title: 'Real-Time XML Parsing',
+      description: 'Automatically parses XML markup and converts tags, attributes, and text nodes into formatted JSON.'
+    },
+    {
+      title: 'Attribute & Tag Handling',
+      description: 'Preserves XML attributes, handles repeated child nodes into arrays, and extracts plain text nodes seamlessly.'
+    },
+    {
+      title: 'File Upload & Download',
+      description: 'Upload .xml files directly and download the output as a formatted .json file with one click.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your raw XML data into the input editor or click "Upload XML File".',
+    'Click "Convert to JSON" to parse and format the data.',
+    'Inspect the formatted JSON output, copy it to clipboard, or download the .json file.'
+  ],
+
+  useCases: [
+    {
+      title: 'API Modernization & Data Integration',
+      description: 'Convert legacy XML SOAP responses, RSS feeds, or configurations into JSON objects for modern JavaScript/Node.js apps.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is my XML data secure?',
+      answer: 'Yes, all parsing and JSON conversion occurs locally inside your web browser. No data is stored or transmitted.'
+    },
+    {
+      question: 'How are repeated XML tags converted?',
+      answer: 'Multiple sibling tags with the same name are automatically grouped into a JSON array.'
+    }
+  ],
+
+  detailedGuide: `This tool uses the browser DOMParser API to build a DOM node tree from XML text, iteratively converting elements, attributes, and text nodes into JavaScript objects before serializing to formatted JSON.`
+},
+'xml-to-sql-converter': {
+  title: 'Free Online XML to SQL Converter – Convert XML to SQL INSERT Queries',
+  introduction: `XML (Extensible Markup Language) is widely used for structuring, transferring, and storing hierarchical data across web APIs, legacy enterprise software, and configuration files. However, relational database management systems (RDBMS) like MySQL, PostgreSQL, Microsoft SQL Server, and SQLite require structured SQL queries (such as INSERT INTO statements) to populate database tables. Our free online XML to SQL Converter bridges this gap by automatically converting XML nodes, attributes, and child tags into clean, ready-to-execute SQL INSERT queries. Designed for database administrators, backend developers, and data analysts, this web tool streamlines batch data migration and database seeding without requiring complex backend scripts or custom parser setups. Built with 100% client-side execution, your XML payloads and database schema details remain completely private and secure inside your browser.`,
+
+  features: [
+    {
+      title: 'Automated Table & Column Extraction',
+      description: 'Intelligently maps XML root and record elements into SQL database table names and corresponding column headers.'
+    },
+    {
+      title: 'Multi-Database Compatibility',
+      description: 'Generates standard ANSI SQL INSERT statements compatible with MySQL, PostgreSQL, SQLite, MariaDB, and MS SQL Server.'
+    },
+    {
+      title: 'Real-Time SQL Query Generation',
+      description: 'Instant parsing and live SQL statement generation as you type or upload your XML file.'
+    },
+    {
+      title: 'Privacy & Client-Side Execution',
+      description: 'All conversions occur inside browser memory; no XML files or data are uploaded to external servers.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your raw XML code into the Input XML editor or click "Load from file" / "Load from Url".',
+    'Click the "Convert to SQL" button to parse the XML tags and generate SQL queries.',
+    'Review the generated SQL INSERT statements in the Formatted Output panel.',
+    'Use "Copy Result" or "Download" to export your ready-to-run .sql database script.'
+  ],
+
+  useCases: [
+    {
+      title: 'Database Migration & Seeding',
+      description: 'Quickly transform legacy XML exports into SQL INSERT scripts to populate development or staging databases.'
+    },
+    {
+      title: 'API Data Ingestion',
+      description: 'Convert third-party XML API responses into database records for backend processing and reporting.'
+    },
+    {
+      title: 'Data Archival & Integration',
+      description: 'Convert structured XML backups into relational database tables seamlessly.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'How does the converter identify the SQL table name?',
+      answer: 'The converter uses the parent container tag (or repeating item node name) in your XML data as the default SQL table name.'
+    },
+    {
+      question: 'Is my XML data secure when using this tool?',
+      answer: 'Yes, 100%. The conversion process runs entirely inside your web browser using JavaScript DOM parsing. Your data is never sent to or stored on any server.'
+    },
+    {
+      question: 'Does this tool support nested XML elements?',
+      answer: 'Yes, simple nested child elements are flattened into table columns. Complex deeply nested nodes are converted into formatted string or JSON values.'
+    },
+    {
+      question: 'Which SQL databases are supported?',
+      answer: 'The generated INSERT INTO statements follow standard ANSI SQL syntax, making them compatible with MySQL, MariaDB, PostgreSQL, SQLite, and Microsoft SQL Server.'
+    },
+    {
+      question: 'Can I upload large XML files?',
+      answer: 'Yes, you can upload XML files directly from your system. Since parsing occurs locally on your machine, performance depends on your device memory.'
+    },
+    {
+      question: 'How does the tool handle XML attributes?',
+      answer: 'XML attributes attached to record nodes are automatically extracted and converted into regular SQL column values alongside child tag values.'
+    },
+    {
+      question: 'Is there any usage limit or registration required?',
+      answer: 'No, this tool is 100% free with unlimited conversions and no registration required.'
+    }
+  ],
+
+  detailedGuide: `This tool utilizes browser-native DOMParser API to traverse XML DOM nodes, extract tag keys and text values, sanitize single quotes to prevent SQL syntax errors, and construct standardized ANSI SQL INSERT INTO statements.`
+},
+'text-to-html-converter': {
+  title: 'Free Online Text to HTML Converter – Convert Plain Text to HTML Code',
+  introduction: `Writing raw HTML markup for web pages, blog posts, documentation, or email templates can be tedious and time-consuming, especially when manually wrapping every paragraph in <p> tags or inserting <br> line breaks. Our free online Text to HTML Converter instantly transforms plain text into clean, valid, and well-structured HTML code. Whether you are migrating text content from word processors, formatting articles for content management systems (CMS), or drafting web code, this tool automates markup generation seamlessly. Built with 100% client-side execution, your private documents and text content never leave your browser, ensuring complete security and lightning-fast performance.`,
+
+  features: [
+    {
+      title: 'Automatic Paragraph & Line Break Wrapping',
+      description: 'Intelligently detects text blocks and wraps them in standard <p> tags while converting single line breaks into <br> elements.'
+    },
+    {
+      title: 'HTML Entity Escaping',
+      description: 'Safely encodes special characters like ampersands, angle brackets, and quotes to prevent rendering errors in web browsers.'
+    },
+    {
+      title: 'File Upload & Instant Download',
+      description: 'Upload plain text files (.txt) directly and export the generated markup as an HTML file with a single click.'
+    },
+    {
+      title: '100% Client-Side Privacy',
+      description: 'All text transformations occur entirely within your browser memory with zero data transmission to external servers.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your plain text into the Input Text editor or upload a text file using "Load from file".',
+    'Click the "Convert to HTML" button to automatically generate structured HTML tags.',
+    'Review the generated markup in the Formatted Output panel on the right.',
+    'Use "Copy Result" or "Download" to export your clean HTML code.'
+  ],
+
+  useCases: [
+    {
+      title: 'Web Content Publishing & Blogging',
+      description: 'Quickly convert drafted articles and notes into ready-to-publish HTML markup for websites and blogs.'
+    },
+    {
+      title: 'Email Template Development',
+      description: 'Generate clean HTML content blocks for transactional or marketing email campaigns.'
+    },
+    {
+      title: 'Document Digitization',
+      description: 'Transform legacy text notes and documentation into web-compatible HTML formats.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'How are paragraphs and line breaks handled?',
+      answer: 'Double line breaks automatically create new <p> (paragraph) blocks, while single line breaks within paragraphs are converted into <br> tags.'
+    },
+    {
+      question: 'Is my text data secure and private?',
+      answer: 'Yes, 100%. The conversion runs completely client-side in your browser JavaScript environment. Your text data is never stored or transmitted.'
+    },
+    {
+      question: 'Can I upload text files directly?',
+      answer: 'Yes, you can click "Load from file" to import any standard .txt file into the input editor instantly.'
+    },
+    {
+      question: 'Does the tool escape special characters?',
+      answer: 'Yes, characters like <, >, and & are automatically escaped into proper HTML entities (&lt;, &gt;, &amp;) to ensure valid syntax.'
+    },
+    {
+      question: 'What does the "Minify / Compact" button do?',
+      answer: 'It removes unnecessary line breaks and extra whitespace from the generated HTML output to create a compact single-line block.'
+    },
+    {
+      question: 'Is there any character or file size limit?',
+      answer: 'There are no strict limits since processing happens locally on your computer hardware.'
+    },
+    {
+      question: 'Do I need to install any plugin or software?',
+      answer: 'No installation is required. The tool runs directly inside any modern web browser.'
+    }
+  ],
+
+  detailedGuide: `This tool parses plain text strings using regular expressions to identify newline blocks, escapes special XML/HTML entities for security, and wraps content in semantic HTML paragraph tags.`
+},
+'html-js-css-filter': {
+  title: 'Free Online HTML, JS and CSS Filter – Strip Tags & Code Instantly',
+  introduction: `When working with scraped web pages, template exports, or mixed raw source code, extracting clean plain text requires stripping out embedded HTML tags, JavaScript functions, and CSS stylesheets. Our free online HTML, JS and CSS Filter tool allows you to selectively remove HTML markups, script blocks, and style definitions with custom checkboxes or regex patterns. Designed for developers, content editors, and data analysts, this tool operates 100% client-side in your browser, keeping your source files entirely private and secure.`,
+
+  features: [
+    {
+      title: 'Selective Code Stripping',
+      description: 'Choose independently whether to filter HTML tags, JavaScript scripts, and CSS stylesheets from your input data.'
+    },
+    {
+      title: 'Custom Regex Filtering',
+      description: 'Enable custom filter patterns to target and remove specific custom words, tags, or unwanted characters.'
+    },
+    {
+      title: 'Whitespace & Line Trim Control',
+      description: 'Automatically trim extra spaces and collapse redundant empty lines to keep output clean and readable.'
+    },
+    {
+      title: '100% Client-Side Privacy',
+      description: 'All filtering operations run locally in browser memory with zero data transmission to external servers.'
+    }
+  ],
+
+  howToUse: [
+    'Paste your raw HTML, JS, or CSS source code into the input editor.',
+    'Select your desired filter options (Filter HTML, Filter JS, Filter CSS, Trim result).',
+    'Click the "Filter" button to execute the cleaning process instantly.',
+    'Copy the cleaned plain text or download it as a text file.'
+  ],
+
+  useCases: [
+    {
+      title: 'Web Scraping & Data Cleaning',
+      description: 'Clean raw scraped HTML markup to extract plain text data for analysis.'
+    },
+    {
+      title: 'Source Code Sanitization',
+      description: 'Strip embedded scripts and styling blocks from template files quickly.'
+    },
+    {
+      title: 'Text Extraction',
+      description: 'Convert heavy web pages or documentation files into readable plain text.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'How do I remove only HTML tags while keeping JavaScript?',
+      answer: 'Simply uncheck "Filter JS" and keep "Filter HTML" checked before clicking the Filter button.'
+    },
+    {
+      question: 'Is my source code secure?',
+      answer: 'Yes, 100%. All processing happens locally in your browser using JavaScript.'
+    },
+    {
+      question: 'Can I use custom regex rules?',
+      answer: 'Yes, check the "Custom Filter" box and enter your regex expression to target specific patterns.'
+    },
+    {
+      question: 'Is there any file size limit?',
+      answer: 'No strict limit; performance depends on your device memory since processing is local.'
+    }
+  ],
+
+  detailedGuide: `This tool parses raw strings via regular expression matching to locate and strip HTML tag structures, script blocks, and style definitions while preserving clean text formatting.`
+},
 };
 
