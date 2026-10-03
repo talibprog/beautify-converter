@@ -55,6 +55,7 @@ import XmlToJsonConverter from '@/components/XmlToJsonConverter';
 import XmlToSqlConverter from '@/components/XmlToSqlConverter';
 import TextToHtmlConverter from '@/components/TextToHtmlConverter';
 import HtmlJsCssFilter from '@/components/HtmlJsCssFilter';
+import RoundedCornerImageGenerator from '@/components/RoundedCornerImageGenerator';
 import Link from 'next/link';
 
 const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
@@ -111,6 +112,7 @@ const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'xml-to-sql-converter': XmlToSqlConverter,
   'text-to-html-converter': TextToHtmlConverter,
   'html-js-css-filter': HtmlJsCssFilter,
+  'rounded-corner-image-generator': RoundedCornerImageGenerator,
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {

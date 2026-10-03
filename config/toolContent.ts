@@ -3206,5 +3206,59 @@ This tool utilizes jsPDF inside browser memory to break continuous text strings 
 
   detailedGuide: `This tool parses raw strings via regular expression matching to locate and strip HTML tag structures, script blocks, and style definitions while preserving clean text formatting.`
 },
+'rounded-corner-image-generator': {
+  title: 'Free Online Rounded Corner Image Generator – Round Image Corners Fast',
+  introduction: `Adding smooth rounded corners or turning square images into circular profile avatars enhances visual appeal for mobile apps, websites, UI designs, and social media graphics. Our free online Rounded Corner Image Generator allows you to quickly crop and soften image edges with customizable border radii, background color fills, and transparent PNG/WebP exports. Designed for web developers, UI/UX designers, and content creators, this tool operates 100% client-side inside your browser—ensuring your images remain completely private and secure without being stored on remote servers.`,
+
+  features: [
+    {
+      title: 'Adjustable Corner Radius',
+      description: 'Slide to smoothly adjust edge roundness from subtle soft corners to full circular crops.'
+    },
+    {
+      title: 'Transparency & Custom Backgrounds',
+      description: 'Export with transparent corners in PNG/WebP formats or apply custom solid background fills.'
+    },
+    {
+      title: 'Multiple Export Formats',
+      description: 'Download processed images instantly in PNG, JPG, or WebP formats.'
+    },
+    {
+      title: '100% Client-Side Privacy',
+      description: 'All canvas processing runs locally in your browser memory with zero server uploads.'
+    }
+  ],
+
+  howToUse: [
+    'Upload your image file by dragging it into the input area or clicking "Load from file".',
+    'Use the "Corner Radius" slider to adjust the edge roundness percentage.',
+    'Select an output format (PNG, JPG, or WebP) and optional background color.',
+    'Click "Download Image" or "Copy DataURL" to export your rounded image.'
+  ],
+
+  useCases: [
+    {
+      title: 'UI/UX Design & Web Assets',
+      description: 'Prepare rounded card thumbnails, buttons, and graphics for mobile and web apps.'
+    },
+    {
+      title: 'Social Media Avatars',
+      description: 'Convert square headshots into round profile pictures for Twitter, LinkedIn, or YouTube.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'Is my image uploaded to any server?',
+      answer: 'No, all image manipulation is performed locally in your web browser using HTML5 Canvas.'
+    },
+    {
+      question: 'Which format supports transparent rounded corners?',
+      answer: 'PNG and WebP formats support full corner transparency.'
+    }
+  ],
+
+  detailedGuide: `This utility uses HTML5 Canvas 2d context path clipping to construct rounded rectangle paths and draw cropped image buffers.`
+},
 };
 
