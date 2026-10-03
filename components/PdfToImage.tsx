@@ -11,6 +11,7 @@ export default function PdfToImage() {
   const [file, setFile] = useState<File | null>(null);
   const [images, setImages] = useState<ConvertedImage[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
+  const [zipping, setZipping] = useState<boolean>(false);
   const [copied, setCopied] = useState<boolean>(false);
   const [error, setError] = useState<string>('');
   const [imageFormat, setImageFormat] = useState<'png' | 'jpeg'>('png');
@@ -79,12 +80,44 @@ export default function PdfToImage() {
   const handleDownloadSingle = (dataUrl: string, pageNumber: number) => {
     const a = document.createElement('a');
     a.href = dataUrl;
-    a.download = `${file?.name.replace('.pdf', '')}_page_${pageNumber}.${imageFormat}`;
+    a.download = `${file?.name.replace(/\.pdf$/i, '')}_page_${pageNumber}.${imageFormat}`;
     a.click();
   };
 
   const handleDownloadAll = () => {
     images.forEach((img) => handleDownloadSingle(img.dataUrl, img.pageNumber));
+  };
+
+  // ZIP Download functionality
+  const handleDownloadZip = async () => {
+    if (images.length === 0) return;
+
+    setZipping(true);
+    try {
+      const JSZip = (await import('jszip')).default;
+      const zip = new JSZip();
+      const folderName = file?.name.replace(/\.pdf$/i, '') || 'converted_images';
+      const imgFolder = zip.folder(folderName);
+
+      images.forEach((img) => {
+        // Base64 dataURL string se raw data extract karna
+        const base64Data = img.dataUrl.split(',')[1];
+        imgFolder?.file(`page_${img.pageNumber}.${imageFormat}`, base64Data, { base64: true });
+      });
+
+      const content = await zip.generateAsync({ type: 'blob' });
+      const zipUrl = URL.createObjectURL(content);
+
+      const a = document.createElement('a');
+      a.href = zipUrl;
+      a.download = `${folderName}_images.zip`;
+      a.click();
+      URL.revokeObjectURL(zipUrl);
+    } catch (err: any) {
+      setError('Failed to generate ZIP: ' + (err.message || 'Unknown error'));
+    } finally {
+      setZipping(false);
+    }
   };
 
   const handleCopyFirstImage = () => {
@@ -196,12 +229,21 @@ export default function PdfToImage() {
             {copied ? 'Copied DataURL!' : 'Copy DataURL'}
           </button>
 
+          {/* Download as ZIP Button */}
+          <button
+            onClick={handleDownloadZip}
+            disabled={images.length === 0 || zipping}
+            className="w-full bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 text-sm rounded-lg transition shadow-sm disabled:opacity-50"
+          >
+            {zipping ? 'Creating ZIP...' : '📦 Download as ZIP'}
+          </button>
+
           <button
             onClick={handleDownloadAll}
             disabled={images.length === 0}
             className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 text-sm rounded-lg transition shadow-sm disabled:opacity-50"
           >
-            Download All Images
+            Download All (Separate)
           </button>
 
           <button
