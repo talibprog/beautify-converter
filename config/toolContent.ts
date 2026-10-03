@@ -97,268 +97,427 @@ Unlike traditional web services that process your sensitive data through remote 
   // Existing json-beautifier object ke baad comma (,) lagakar ise paste karein:
 
   'css-minifier': {
-    title: 'Free Online CSS Minifier & Beautifier Tool',
-    introduction: `Web performance and page loading speed are crucial factors for user experience and search engine optimization (SEO). Cascading Style Sheets (CSS) often contain extra whitespace, comments, indentation, and unused characters that increase file size and delay rendering times. Our free online CSS Minifier & Beautifier allows developers to compress style files instantly to boost site speed or format ugly CSS into clean, readable blocks for maintenance.
+  title: 'Free Online CSS Minifier & Beautifier | Fast CSS Code Compressor',
+  introduction: `Optimizing web application performance and achieving blazing-fast page load speeds are essential factors for modern digital user experience and technical Search Engine Optimization (SEO). Cascading Style Sheets (CSS) files are core design assets, but they often contain extensive extra whitespace, unneeded comments, redundant indentation, and bloated selectors that inflate overall file size and cause severe rendering delays (render-blocking assets). Our advanced Free Online CSS Minifier & Beautifier tool empowers web developers, UI/UX designers, and site speed optimization specialists to compress style files instantly to dramatically improve Core Web Vitals or un-minify obfuscated stylesheets into clean, structured, and highly readable code blocks for fast debugging and maintenance.
 
-    By stripping away redundant characters, our client-side CSS minifier reduces payload size significantly without changing the styling behavior on your web application. Processing takes place completely inside your local browser engine, ensuring instant execution and absolute security for proprietary project stylesheets.`,
+  By intelligently stripping out non-functional characters, trailing semicolons, and useless spaces without altering your site's visual presentation or cascading rules, our client-side CSS minification tool reduces payload sizes by up to 50%. Every bit of parsing and execution happens 100% locally within your secure web browser engine. This guarantees zero server latency, lightning-fast execution speed, and absolute privacy for proprietary, closed-source enterprise stylesheets and custom CSS frameworks.`,
 
-    features: [
-      {
-        title: 'High-Efficiency CSS Compression',
-        description: 'Removes unnecessary whitespaces, line breaks, comments, and trailing semicolons to generate optimized production CSS.'
-      },
-      {
-        title: 'Dual Mode: Minify & Beautify',
-        description: 'Switch easily between single-line minification for production and multi-line formatting for local debugging.'
-      },
-      {
-        title: 'Instant Browser Execution',
-        description: 'Compresses thousands of lines of style declarations instantly without sending data to cloud servers.'
-      },
-      {
-        title: 'Clipboard Integration',
-        description: 'One-click copy function enables rapid workflow integration with code editors like VS Code.'
-      }
-    ],
+  features: [
+    {
+      title: 'High-Efficiency CSS Compression & Payload Reduction',
+      description: 'Removes unnecessary whitespaces, line breaks, code comments, and duplicate semicolons to generate production-ready, ultra-lightweight minified CSS.'
+    },
+    {
+      title: 'Dual-Mode Engine: One-Click Minify & Beautify',
+      description: 'Seamlessly toggle between ultra-compact single-line CSS minification for live deployment and multi-line structured code formatting for local debugging.'
+    },
+    {
+      title: '100% Client-Side Privacy & Browser Processing',
+      description: 'Processes thousands of lines of style declarations entirely inside your local browser instance without uploading sensitive project code to cloud servers.'
+    },
+    {
+      title: 'One-Click Clipboard & Editor Integration',
+      description: 'Features immediate clipboard copying and direct file loader options to integrate smoothly into VS Code, Sublime Text, or automated build workflows.'
+    },
+    {
+      title: 'Syntax Preserving & Rule Safety',
+      description: 'Guarantees 100% functional consistency by preserving CSS variables, media queries, keyframe animations, and browser-specific vendor prefixes.'
+    }
+  ],
 
-    howToUse: [
-      'Copy your raw or uncompressed CSS code from your stylesheet.',
-      'Paste the code into the Input CSS panel.',
-      'Click "Minify CSS" to compress the stylesheet for web production, or "Beautify CSS" to un-minify messy code.',
-      'Copy the output result directly to your clipboard and replace your production stylesheet.'
-    ],
+  howToUse: [
+    'Copy your raw, uncompressed, or messy CSS source code from your stylesheet or code editor.',
+    'Paste the raw style code into the Input CSS text area, or upload a local stylesheet file directly.',
+    'Click "Minify CSS" to heavily compress the stylesheet for web production, or "Beautify CSS" to format compact code into readable indented blocks.',
+    'Review the calculated compression percentage and output file size stats.',
+    'Click "Copy Result" or download the processed .css file to instantly replace your production assets.'
+  ],
 
-    useCases: [
-      {
-        title: 'Improving Google PageSpeed Insights Score',
-        description: 'Minifying CSS files reduces render-blocking resources, directly improving Core Web Vitals and SEO rankings.'
-      },
-      {
-        title: 'Production Build Optimization',
-        description: 'Web designers compress inline stylesheets and custom template CSS before deploying websites live.'
-      },
-      {
-        title: 'Debugging Third-Party Stylesheets',
-        description: 'Format compressed vendor stylesheets to inspect class selectors and responsive layout rules.'
-      }
-    ],
+  useCases: [
+    {
+      title: 'Boosting Google Core Web Vitals & PageSpeed Insights',
+      description: 'Eliminates render-blocking CSS resources, reducing First Contentful Paint (FCP) and Largest Contentful Paint (LCP) scores for higher Google SEO rankings.'
+    },
+    {
+      title: 'Production Build & Deployment Optimization',
+      description: 'Essential for web engineers, WordPress developers, and Shopify creators needing to compress inline stylesheets and custom template CSS before going live.'
+    },
+    {
+      title: 'Debugging Obfuscated Third-Party Stylesheets',
+      description: 'Format minified vendor CSS files, Bootstrap, or Tailwind production builds to quickly inspect class selectors, media queries, and responsive rules.'
+    },
+    {
+      title: 'Bandwidth & CDN Cost Savings',
+      description: 'Minimizes bandwidth consumption across high-traffic web apps by serving compressed static assets to end users over global CDNs.'
+    }
+  ],
 
-    faq: [
-      {
-        question: 'Does minifying CSS alter how my website looks?',
-        answer: 'No. Minification only strips out non-functional characters like spaces, tabs, newline breaks, and code comments. The actual visual properties remain 100% identical.'
-      },
-      {
-        question: 'Is it safe to paste confidential site designs here?',
-        answer: 'Yes. Our tool executes JavaScript locally inside your browser session, meaning zero data is sent across the network.'
-      },
-      {
-        question: 'How much file size reduction can I expect?',
-        answer: 'Depending on how heavily commented and spaced your original CSS code is, minification typically reduces file size by 20% to 50%.'
-      }
-    ],
+  faq: [
+    {
+      question: 'Does minifying CSS alter or break my website layout?',
+      answer: 'No. Minification strictly eliminates non-functional characters like spaces, tabs, carriage returns, and developer comments. The visual output, property cascades, selector specificity, and computed styles remain 100% identical.'
+    },
+    {
+      question: 'Is it safe to paste confidential enterprise CSS code here?',
+      answer: 'Yes, absolutely. Our tool runs completely client-side using browser JavaScript execution. Your source code is never transmitted over the internet, logged, or saved on any remote backend server.'
+    },
+    {
+      question: 'How much file size reduction can I expect from minifying CSS?',
+      answer: 'Depending on how heavily commented and formatted your original stylesheet is, minification typically delivers a 20% to 50% file size reduction, significantly cutting download times on mobile networks.'
+    },
+    {
+      question: 'What is the difference between CSS Minification and CSS Formatting/Beautification?',
+      answer: 'CSS Minification strips out whitespace and line breaks to minimize file size for browser execution. CSS Beautification (formatting) adds clean indentation, spacing, and line breaks to make minified or messy code human-readable.'
+    },
+    {
+      question: 'Can I restore minified CSS back to its original formatted state?',
+      answer: 'Yes! Using our "Beautify CSS" mode, you can instantly reformat single-line compressed CSS into neatly indented, multi-line blocks. However, original code comments deleted during minification cannot be recovered.'
+    },
+    {
+      question: 'Does this tool support modern CSS3 features, variables, and media queries?',
+      answer: 'Yes. Our engine natively parses modern CSS3 constructs including custom CSS properties (--variables), @container queries, @supports blocks, flexbox/grid properties, and keyframe animations.'
+    },
+    {
+      question: 'Should I minify CSS files if my server already uses Gzip or Brotli compression?',
+      answer: 'Yes, you should do both. CSS minification removes structural noise from the code first, and Gzip/Brotli compresses the remaining text stream. Combining both practices yields the maximum possible compression ratio.'
+    },
+    {
+      question: 'Can I process large CSS stylesheets with thousands of lines?',
+      answer: 'Yes. Because processing leverages your local computer hardware and V8 JavaScript engine, even massive stylesheets with 10,000+ lines are minified or beautified almost instantaneously.'
+    }
+  ],
 
-    detailedGuide: `Why CSS Optimization Matters for Modern Web Apps
-    
-    When a user visits a website, the browser must download, parse, and execute all linked CSS files before rendering the visible layout (a process known as render-blocking). Large, unminified stylesheets increase overall load times and degrade mobile network performance.
-    
-    Best practices for CSS deployment:
-    1. Always minify production CSS assets.
-    2. Remove unused selectors before deploying.
-    3. Maintain source maps or unminified files during local development.`
-  },
-  // Existing css-minifier ke baad comma (,) lagakar paste karein:
+  detailedGuide: `Why CSS Optimization & Minification Matters for Modern Web Applications
 
-  'csv-to-json': {
-    title: 'Free Online CSV to JSON Converter',
-    introduction: `Comma-Separated Values (CSV) is the universal file format for spreadsheets, relational database exports, and tabular reporting. However, modern web services, RESTful APIs, and frontend JavaScript frameworks require data in JSON format. Our free online CSV to JSON Converter allows engineers, data analysts, and software developers to seamlessly transform flat CSV records into structured JSON array objects.
+When a visitor requests a web page, the browser must download, parse, and evaluate every linked CSS file before rendering any visual content to the screen. In web development terminology, CSS is a critical "render-blocking resource." If your stylesheets are bloated with thousands of lines of whitespace, developer comments, and structural line breaks, the browser's main thread spends precious milliseconds parsing unnecessary characters, directly impacting user bounce rates and conversion metrics.
 
-    Whether you are parsing large dataset exports from Microsoft Excel, migrating database tables to NoSQL collections like MongoDB, or seeding mock backend APIs, this browser-native tool formats data with zero configuration needed. Process confidential spreadsheet data safely on your machine without backend server risks.`,
+Key Technical Advantages of CSS Minification:
+1. Faster First Contentful Paint (FCP): Stripping unnecessary bytes allows the browser to render critical layout blocks much faster over 3G/4G/5G mobile connections.
+2. Reduced Network Transfer Overhead: Lower payload sizes conserve server bandwidth and reduce Content Delivery Network (CDN) egress bandwidth charges.
+3. Enhanced Search Engine Rankings: Search engines like Google prioritize fast-loading websites, directly incorporating page speed and Core Web Vitals metrics into their search ranking algorithms.
 
-    features: [
-      {
-        title: 'Automatic Header Extraction',
-        description: 'Uses the first row of your CSV input as JSON object keys for accurate key-value mapping.'
-      },
-      {
-        title: 'Instant Browser Parsing',
-        description: 'Converts thousands of spreadsheet rows instantly using optimized client-side parsing engines.'
-      },
-      {
-        title: 'Clean JSON Formatting',
-        description: 'Generates standardized 2-space indented JSON arrays ready for immediate API consumption.'
-      },
-      {
-        title: '100% Client-Side Privacy',
-        description: 'Your uploaded tabular data stays entirely inside your browser memory without cloud transmission.'
-      }
-    ],
+Best Practices for CSS Deployment Pipelines:
+• Always maintain raw, unminified source files (or SASS/SCSS source code with source maps) for development and maintenance.
+• Minify all public static assets before publishing to production environments.
+• Combine CSS minification with HTTP/2 or HTTP/3 server push and Brotli server-level compression for ultimate speed performance.`
+},
 
-    howToUse: [
-      'Copy your CSV tabular data or open your spreadsheet in Excel/Google Sheets and copy the cells.',
-      'Paste the tabular data directly into the Input CSV text panel.',
-      'Click "Convert to JSON" to trigger the conversion engine.',
-      'Copy the formatted JSON array output directly using the "Copy Output" button.'
-    ],
+'csv-to-json': {
+  title: 'Free Online CSV to JSON Converter | Fast Tabular Data Transformer',
+  introduction: `Comma-Separated Values (CSV) remains the global standard file format for exporting spreadsheet data, relational database records, reporting metrics, and financial logs. However, modern web applications, RESTful microservices, mobile applications, and frontend JavaScript frameworks require structured data in JavaScript Object Notation (JSON) format. Our free online CSV to JSON Converter bridges this technical gap, allowing data engineers, software developers, analysts, and system administrators to seamlessly transform flat CSV files into clean, perfectly validated JSON arrays and objects.
 
-    useCases: [
-      {
-        title: 'Seeding NoSQL Databases',
-        description: 'Convert Excel database exports to JSON objects for bulk insertion into Firebase, MongoDB, or Supabase.'
-      },
-      {
-        title: 'Frontend API Mocking',
-        description: 'Quickly create JSON mock payloads for web components from client-provided spreadsheet specifications.'
-      },
-      {
-        title: 'Data Migration Pipelines',
-        description: 'Transform legacy relational system logs into modern JSON microservice input feeds.'
-      }
-    ],
+  Whether you are parsing large dataset exports from Microsoft Excel, migrating MySQL/PostgreSQL database tables to NoSQL collections like MongoDB or Firebase, or generating mock API data for frontend unit testing, this browser-native tool delivers zero-configuration, lightning-fast execution. Process sensitive financial spreadsheets, user records, and confidential enterprise datasets with complete confidence knowing that all data transformations happen entirely inside your local browser sandbox without cloud transmission risks.`,
 
-    faq: [
-      {
-        question: 'Must the CSV data contain headers in the first row?',
-        answer: 'Yes. The first line of your CSV is parsed to define property key names for each JSON object generated.'
-      },
-      {
-        question: 'Is there a row limit for conversion?',
-        answer: 'No. Since conversion relies on local client computing power, you can convert multi-thousand-row CSVs quickly.'
-      },
-      {
-        question: 'Can I convert Excel files directly?',
-        answer: 'You can copy and paste the rows directly from Excel or Google Sheets into the input area.'
-      }
-    ],
+  features: [
+    {
+      title: 'Smart Header Auto-Detection & Key Mapping',
+      description: 'Automatically reads the first row of your CSV dataset to define clean JSON object keys for accurate key-value mapping.'
+    },
+    {
+      title: 'Ultra-Fast Browser-Native Data Parsing',
+      description: 'Processes tens of thousands of spreadsheet rows in milliseconds using optimized, non-blocking client-side parsing algorithms.'
+    },
+    {
+      title: 'Clean & Formatted JSON Output',
+      description: 'Generates standardized, 2-space indented JSON array payloads ready for immediate copy-pasting or REST API integration.'
+    },
+    {
+      title: '100% Client-Side Privacy & Data Isolation',
+      description: 'Your uploaded business spreadsheets and customer records never leave your machine—zero server uploads or data logging.'
+    },
+    {
+      title: 'Flexible Input Options & Direct File Import',
+      description: 'Paste tabular rows directly from Microsoft Excel or Google Sheets, or upload .csv files directly from your computer.'
+    }
+  ],
 
-    detailedGuide: `Understanding CSV to JSON Data Transformation
-    
-    CSV files store tabular data in plain text where each line represents a row, and fields are separated by commas. While CSVs are lightweight, they lack native support for nested hierarchies or typed data schemas.
-    
-    JSON provides flexible data modeling required by web applications. Transforming tabular datasets into structured JSON arrays bridges the gap between spreadsheet management and software development.`
-  },
-  'base64-encoder-decoder': {
-    title: 'Free Online Base64 Encoder & Decoder',
-    introduction: `Base64 is a binary-to-text encoding scheme that converts binary data into ASCII string format. It is essential for modern web development, REST APIs, and MIME email transmission where raw data must pass through text-only communication channels without corruption.
+  howToUse: [
+    'Copy your raw CSV text, or select and copy rows directly from Microsoft Excel or Google Sheets.',
+    'Paste the tabular data into the Input CSV panel, or use the file loader to select a .csv file from your computer.',
+    'Click "Convert to JSON" to trigger the automated parsing engine.',
+    'Inspect the beautifully formatted JSON array output in the right-hand panel.',
+    'Click "Copy Output" to copy the JSON object to your clipboard or download it as a .json file.'
+  ],
 
-    Our free online Base64 Encoder & Decoder allows developers, cybersecurity professionals, and data engineers to convert plain text into Base64 encoded strings or decode Base64 strings back to human-readable text instantly. Load data from local files, remote URLs, or direct input with 100% client-side execution.`,
+  useCases: [
+    {
+      title: 'Seeding NoSQL & Cloud Databases',
+      description: 'Convert Excel database exports directly into JSON array objects for bulk import into MongoDB, Firebase Firestore, Supabase, or DynamoDB.'
+    },
+    {
+      title: 'Frontend API Mocking & Component Development',
+      description: 'Quickly convert business spreadsheet data into JSON mock payloads for React, Vue, Angular, and Next.js UI development.'
+    },
+    {
+      title: 'Data Migration & Microservice Integration',
+      description: 'Transform legacy tabular file logs into modern JSON data streams consumed by Node.js, Python, or Go microservices.'
+    },
+    {
+      title: 'Configuration File Generation',
+      description: 'Convert structured tabular metadata into localized JSON dictionary files for internationalization (i18n) frameworks.'
+    }
+  ],
 
-    features: [
-      {
-        title: 'Two-Way Conversion',
-        description: 'Seamlessly encode plain text to Base64 format or decode complex Base64 strings back to plain text.'
-      },
-      {
-        title: 'File & URL Loader',
-        description: 'Upload local text files or fetch remote content directly via public Web URLs for instant parsing.'
-      },
-      {
-        title: 'Full UTF-8 & Emoji Support',
-        description: 'Handles special characters, non-English scripts, and emojis accurately without character encoding errors.'
-      },
-      {
-        title: '100% Client-Side Privacy',
-        description: 'All encoding and decoding process happens locally in your browser memory without cloud server transmission.'
-      }
-    ],
+  faq: [
+    {
+      question: 'Does my CSV input need to have column headers in the first row?',
+      answer: 'Yes. The converter relies on the first row of your CSV file to assign property key names for each generated JSON object in the array.'
+    },
+    {
+      question: 'Is there a file size or row count limit for CSV to JSON conversion?',
+      answer: 'There are no artificial limits. Since the parsing is performed locally using your computer RAM and browser engine, you can convert thousands of rows smoothly.'
+    },
+    {
+      question: 'Can I copy and paste data directly from Excel or Google Sheets without saving as a CSV file?',
+      answer: 'Yes! Simply highlight the cells in Microsoft Excel, Apple Numbers, or Google Sheets, copy them (Ctrl+C), and paste them directly into the input area. Our parser handles tab-separated values smoothly.'
+    },
+    {
+      question: 'Is my uploaded CSV data stored or saved on any remote server?',
+      answer: 'No. All conversion algorithms execute strictly inside your local browser memory. No data is sent over the network, ensuring 100% compliance with strict privacy policies like GDPR and HIPAA.'
+    },
+    {
+      question: 'How does the converter handle commas inside text fields?',
+      answer: 'Our parser intelligently handles standard CSV quotation marks. Text values enclosed in double quotes containing internal commas are correctly parsed as single string properties.'
+    },
+    {
+      question: 'Can I convert the generated JSON back to CSV if needed?',
+      answer: 'Yes, you can use a reverse JSON-to-CSV parser to recreate flat spreadsheet files whenever required.'
+    },
+    {
+      question: 'How are empty cells in my CSV handled in the JSON output?',
+      answer: 'Empty cells are automatically mapped as empty string values ("") or null values, ensuring object structural uniformity across the entire JSON array.'
+    },
+    {
+      question: 'Does this tool support non-English characters and special symbols?',
+      answer: 'Yes. The converter fully supports UTF-8 character encoding, ensuring special symbols, accents, emojis, and international scripts are perfectly preserved.'
+    }
+  ],
 
-    howToUse: [
-      'Paste your plain text or Base64 string directly into the Input panel.',
-      'Alternatively, click "Load from Url" or "Load from file" to import content.',
-      'Click "Encode to Base64" or "Decode Base64" to perform the conversion.',
-      'Use "Copy Result" or "Download" to retrieve your processed output instantly.'
-    ],
+  detailedGuide: `Understanding CSV to JSON Data Transformation Mechanics
 
-    useCases: [
-      {
-        title: 'API Basic Authentication',
-        description: 'Encode username and password pairs into Base64 format for HTTP Authorization headers.'
-      },
-      {
-        title: 'Data URI & Payload Embedding',
-        description: 'Safely format raw text, tokens, or string payloads to embed directly inside JSON, XML, or HTML.'
-      },
-      {
-        title: 'Data Obfuscation & Security',
-        description: 'Quickly decode obfuscated payload strings found in web logs, webhooks, or API requests.'
-      }
-    ],
+CSV (Comma-Separated Values) is a flat file format where each line represents a record row and columns are delimited by commas. While CSV files are lightweight and universally readable by spreadsheet applications, they lack hierarchical depth, data typing, and native support for nested structures required by modern web technologies.
 
-    faq: [
-      {
-        question: 'Is Base64 considered encryption?',
-        answer: 'No. Base64 is an encoding method, not encryption. It does not secure data and can be easily decoded by anyone using a decoder tool.'
-      },
-      {
-        question: 'Is my data saved on any server when using this tool?',
-        answer: 'No. The encoding and decoding logic runs entirely inside your browser JavaScript engine. No data leaves your machine.'
-      },
-      {
-        question: 'Does this tool support non-ASCII and UTF-8 characters?',
-        answer: 'Yes. Our engine uses UTF-8 safe encoding techniques to prevent corruption of special symbols and international characters.'
-      }
-    ],
+JSON (JavaScript Object Notation), on the other hand, is the default data exchange format for modern web standards. Converting tabular data into structured JSON array objects bridges the gap between spreadsheet management and web development.
 
-    detailedGuide: `Understanding Base64 Encoding and Decoding Mechanics
+Key Steps in the CSV to JSON Transformation Process:
+1. Header Extraction: The parser reads line 1 to establish string identifiers for object key properties.
+2. Row Parsing: The algorithm iterates through subsequent lines, splitting values while accounting for quote-escaped strings.
+3. Object Construction: Each row is transformed into a key-value dictionary, which is pushed into a parent JSON array.
+4. Validation & Formatting: The final output is checked for syntax validity and formatted with standardized 2-space indentation.`
+},
 
-    Base64 encoding works by taking binary or text data and splitting it into 6-bit chunks. Each 6-bit block is mapped to one of 64 characters in the ASCII standard alphabet (A-Z, a-z, 0-9, +, and /), using '=' for padding when necessary.
+'base64-encoder-decoder': {
+  title: 'Free Online Base64 Encoder & Decoder | Binary-to-Text Converter',
+  introduction: `Base64 is a fundamental binary-to-text encoding scheme that translates raw binary data and complex text strings into an ASCII-compliant radix-64 representation. It plays a critical role in modern web development, network communication protocols, API authentication, and email MIME standards where binary assets or special characters must pass through text-focused channels without data corruption. Our free online Base64 Encoder & Decoder provides a fast, robust, and secure interface for developers, cybersecurity analysts, and system administrators to instantly encode plain text into Base64 format or decode obfuscated Base64 strings back to human-readable text.
 
-    While Base64 increases data size by roughly 33%, it guarantees that data passes through legacy transmission layers—such as email protocols or URL headers—without data corruption or unexpected character interpretation.`
-  },
-  'sip-calculator': {
-    title: 'Free Online SIP Calculator',
-    introduction: `A Systematic Investment Plan (SIP) is one of the most effective ways to build wealth over time by investing a fixed amount regularly in mutual funds.
+  Equipped with full support for UTF-8 character sets, special symbols, foreign languages, and raw file data, our tool executes all operations locally inside your web browser. Load input data directly from local text files, remote URLs, or interactive text inputs with total confidence that your cryptographic keys, API authorization tokens, and personal credentials remain 100% private and protected from cloud interception.`,
 
-    Our free online SIP Calculator helps you forecast the future value of your monthly investments based on estimated annual return rates and investment duration.`,
+  features: [
+    {
+      title: 'Two-Way Instant Encoding & Decoding',
+      description: 'Effortlessly convert plain text to standard Base64 string formats or decode obfuscated Base64 strings back to readable text in real time.'
+    },
+    {
+      title: 'Full UTF-8, Unicode & Emoji Compatibility',
+      description: 'Includes native UTF-8 multi-byte character handling to prevent character encoding errors, corrupted text, or broken symbols.'
+    },
+    {
+      title: 'Direct File & Remote URL Data Importer',
+      description: 'Load input text directly from local computer files or fetch remote string payloads over HTTPS endpoints for swift decoding.'
+    },
+    {
+      title: '100% Browser-Native Client Security',
+      description: 'All string transformations are processed in your local browser sandbox, guaranteeing zero server logging and absolute privacy.'
+    },
+    {
+      title: 'One-Click Copy & Download Functionality',
+      description: 'Copy processed Base64 output strings to your clipboard instantly or download decoded text as local files for rapid developer workflows.'
+    }
+  ],
 
-    features: [
-      {
-        title: 'Interactive Sliders',
-        description: 'Easily adjust monthly investment, return rate, and tenure with real-time value updates.'
-      },
-      {
-        title: 'Instant Breakup',
-        description: 'Provides a clear distinction between your actual invested capital and estimated returns.'
-      },
-      {
-        title: '100% Client-Side Calculations',
-        description: 'All formulas execute instantly in your browser without any server latency.'
-      }
-    ],
+  howToUse: [
+    'Paste your plain text or Base64 encoded string directly into the main Input panel.',
+    'Alternatively, click "Load from Url" to fetch string payloads from a public URL or "Load from file" to import local files.',
+    'Click "Encode to Base64" to convert plain text into an encoded ASCII string, or "Decode Base64" to reveal original text.',
+    'Review the generated output instantly in the Result box.',
+    'Click "Copy Result" to save the string to your clipboard or "Download" to save the output file.'
+  ],
 
-    howToUse: [
-      'Adjust the Monthly Investment slider to select your monthly commitment.',
-      'Set the Expected Return Rate according to your mutual fund historical returns.',
-      'Select the Investment Duration in years.',
-      'View the total value and profit breakup instantly on the summary panel.'
-    ],
+  useCases: [
+    {
+      title: 'HTTP Basic Authentication Header Generation',
+      description: 'Encode "username:password" credential pairs into Base64 strings required by HTTP Basic Auth authorization headers.'
+    },
+    {
+      title: 'Embedding Assets in Data URIs',
+      description: 'Convert raw strings, SVGs, or small images into Base64 Data URIs to embed inline inside HTML, CSS, or JSON payloads.'
+    },
+    {
+      title: 'Decoding Obfuscated Logs & Webhook Payload Inspection',
+      description: 'Instantly decode Base64 encoded payload strings encountered in server access logs, OAuth responses, and webhook events.'
+    },
+    {
+      title: 'Safe Data Transmission in Email & URL Parameters',
+      description: 'Ensure complex text strings containing special symbols pass safely through email gateways or URL query strings without corruption.'
+    }
+  ],
 
-    useCases: [
-      {
-        title: 'Wealth Planning',
-        description: 'Estimate investment amounts needed to achieve future financial milestones like buying a home or retirement.'
-      },
-      {
-        title: 'Portfolio Comparison',
-        description: 'Evaluate potential returns across different equity, hybrid, or debt mutual fund expectations.'
-      }
-    ],
+  faq: [
+    {
+      question: 'Is Base64 encoding the same as data encryption?',
+      answer: 'No! Base64 is an encoding algorithm designed for data formatting, NOT encryption or security. Base64 strings can be easily decoded by anyone using a standard Base64 decoder tool. Never rely on Base64 alone to protect sensitive passwords or secret keys.'
+    },
+    {
+      question: 'Why does Base64 encoding increase file or string size?',
+      answer: 'Base64 represents 3 bytes of binary data using 4 ASCII characters. This introduces an approximate 33% overhead increase in overall data size in exchange for universal protocol compatibility.'
+    },
+    {
+      question: 'Is my data transmitted to any remote server when using this tool?',
+      answer: 'No. All Base64 encoding and decoding operations take place completely within your local browser JavaScript runtime environment. Your data never touches our servers.'
+    },
+    {
+      question: 'Does this Base64 tool support special non-English characters and emojis?',
+      answer: 'Yes! Standard JavaScript atob and btoa functions fail on multi-byte UTF-8 strings. Our engine includes specialized UTF-8 byte array encoders to ensure non-English languages, mathematical symbols, and emojis are processed perfectly without corruption.'
+    },
+    {
+      question: 'What do the equal signs (=) at the end of a Base64 string mean?',
+      answer: 'Equal signs (=) are padding characters. Base64 processes data in 24-bit (3-byte) blocks. If the source data length is not evenly divisible by 3, padding characters are appended to complete the final block.'
+    },
+    {
+      question: 'What is URL-Safe Base64 encoding?',
+      answer: 'Standard Base64 uses + and / characters, which have special meanings in web URLs. URL-safe Base64 replaces + with - (hyphen) and / with _ (underscore) to allow safe usage in query parameters.'
+    },
+    {
+      question: 'Can I decode corrupted or incomplete Base64 strings?',
+      answer: 'If a Base64 string is missing characters or contains invalid non-Base64 symbols, decoding will fail or produce garbled text. Ensure the input string is complete before decoding.'
+    },
+    {
+      question: 'Can I upload files to encode them into Base64?',
+      answer: 'Yes. You can use the "Load from file" button to read local text-based files and convert their contents directly to Base64 format.'
+    }
+  ],
 
-    faq: [
-      {
-        question: 'Is SIP investment risk-free?',
-        answer: 'No, SIP returns depend on market performance. However, investing long-term helps average out market volatility.'
-      },
-      {
-        question: 'What formula is used in SIP calculation?',
-        answer: 'The formula used is FV = P × [{(1 + i)^n - 1} / i] × (1 + i), where P is monthly deposit, i is monthly interest rate, and n is total months.'
-      }
-    ],
+  detailedGuide: `Understanding Base64 Encoding Mechanics & Technical Architecture
 
-    detailedGuide: `Understanding Power of Compounding in SIP
+Base64 is a standardized binary-to-text encoding algorithm specified in RFC 4648. It converts binary or string data into a limited set of 64 printable ASCII characters:
+• Uppercase letters (A-Z)
+• Lowercase letters (a-z)
+• Numeric digits (0-9)
+• Special characters + and /
+• Padding character =
 
-    Systematic Investment Plans leverage compounding interest. By making disciplined monthly contributions, early returns generate their own earnings, leading to exponential growth over multi-year horizons.`
-  },
+How Base64 Encoding Works Step-by-Step:
+1. Binary Grouping: The source string is converted into a binary stream of 8-bit bytes.
+2. 6-Bit Splitting: The binary stream is regrouped into 6-bit chunks (since 2^6 = 64).
+3. Index Mapping: Each 6-bit value (0 to 63) is mapped to its corresponding character in the Base64 alphabet table.
+4. Padding Assignment: If the final block contains fewer than 24 bits, trailing '=' characters are added so the output string length is always a multiple of 4.
+
+Why Base64 is Crucial for Web Engineers:
+In legacy network systems, certain binary bytes (like null characters or control codes) could cause communication channels to truncate or modify data. By converting binary payloads into safe ASCII characters, Base64 guarantees intact transmission across all network proxies and email servers.`
+},
+
+'sip-calculator': {
+  title: 'Free Online SIP Calculator | Systematic Investment Plan Growth Predictor',
+  introduction: `A Systematic Investment Plan (SIP) is widely recognized as one of the most disciplined, effective, and accessible strategies for building wealth over time. By committing a fixed sum of money at regular monthly intervals into equity or debt mutual funds, investors leverage the twin financial superpowers of rupee cost averaging and compound interest. Our free online SIP Calculator allows individual investors, financial planners, and wealth managers to instantly project the future capital value of their monthly investments based on estimated annual return rates and investment tenures.
+
+  Whether you are planning long-term financial goals like buying your dream home, funding higher education, or building a comfortable retirement corpus, this interactive calculator provides real-time financial clarity. Explore different investment scenarios, analyze your total invested capital against estimated capital growth, and make data-driven wealth creation decisions with 100% instant browser calculations.`,
+
+  features: [
+    {
+      title: 'Interactive Real-Time Input Sliders',
+      description: 'Effortlessly tweak monthly investment amounts, expected annual return rates, and duration years with instantaneous financial result recalculations.'
+    },
+    {
+      title: 'Clear Wealth Breakup & Profit Visualization',
+      description: 'Provides a clean visual breakdown separating your actual deposited capital from estimated compound interest wealth gains.'
+    },
+    {
+      title: '100% Browser-Native Client Calculations',
+      description: 'All compound growth formulas run locally in your browser memory for immediate responses with complete privacy.'
+    },
+    {
+      title: 'Flexible Investment Goal Modeling',
+      description: 'Simulate short-term (1-3 years), mid-term (5-10 years), and ultra-long-term (15-30 years) mutual fund investment strategies.'
+    },
+    {
+      title: 'Mobile-Optimized Responsive Design',
+      description: 'Calculate and plan your mutual fund investments seamlessly across desktop computers, tablets, and mobile smartphones.'
+    }
+  ],
+
+  howToUse: [
+    'Adjust the Monthly Investment slider (or type directly) to set your planned monthly contribution amount.',
+    'Set the Expected Return Rate (%) based on historical mutual fund benchmarks or target expectations.',
+    'Select your total Investment Duration in years using the tenure control.',
+    'Instantly view your Total Invested Capital, Estimated Returns, and Total Projected Portfolio Value on the summary card.'
+  ],
+
+  useCases: [
+    {
+      title: 'Retirement Corpus & Freedom Planning',
+      description: 'Determine the exact monthly investment required to build a multi-million dollar or rupee nest egg for comfortable retirement.'
+    },
+    {
+      title: 'Higher Education & Milestone Planning',
+      description: 'Project future fund growth required to cover major life milestones like child higher education, marriage, or purchasing real estate.'
+    },
+    {
+      title: 'Lumpsum vs. SIP Growth Comparisons',
+      description: 'Evaluate how regular, disciplined monthly contributions compound compared to passive high-yield savings accounts.'
+    },
+    {
+      title: 'Mutual Fund Portfolio Selection',
+      description: 'Compare potential portfolio growth across equity mutual funds (12-15% return expectations), hybrid funds, and conservative debt funds.'
+    }
+  ],
+
+  faq: [
+    {
+      question: 'What is a Systematic Investment Plan (SIP)?',
+      answer: 'A SIP is an investment method offered by mutual funds where an investor contributes a fixed amount at regular intervals (usually monthly) rather than making a one-time lump sum investment.'
+    },
+    {
+      question: 'Is mutual fund SIP investment completely risk-free?',
+      answer: 'No. SIP investments in mutual funds are subject to market risks, and returns are not guaranteed. However, investing regularly over a long tenure reduces market volatility risk through rupee cost averaging.'
+    },
+    {
+      question: 'What financial formula is used to calculate SIP returns?',
+      answer: 'The SIP return formula is FV = P × [{(1 + i)^n - 1} / i] × (1 + i), where FV is Future Value, P is Monthly Contribution, i is Monthly Interest Rate (Annual Rate / 12 / 100), and n is Total Number of Months.'
+    },
+    {
+      question: 'How does Rupee Cost Averaging work in SIPs?',
+      answer: 'When market prices fall, your fixed monthly SIP amount buys more mutual fund units. When prices rise, it buys fewer units. Over time, this lowers your average cost per unit without requiring you to time the market.'
+    },
+    {
+      question: 'What is a realistic expected return rate for equity SIP investments?',
+      answer: 'Historically, diversified equity mutual funds over long tenures (7+ years) have delivered average returns ranging between 12% and 15% annually, though past performance does not guarantee future results.'
+    },
+    {
+      question: 'Can I increase my monthly SIP investment amount over time?',
+      answer: 'Yes! Most mutual fund platforms offer a "Step-up SIP" or "Top-up SIP" feature that allows you to increase your monthly investment by a fixed percentage or amount every year as your income grows.'
+    },
+    {
+      question: 'Are SIP investments eligible for tax deductions?',
+      answer: 'Yes. Investments in Equity Linked Savings Schemes (ELSS) mutual funds via SIP qualify for tax deductions under Section 80C (in applicable tax regimes), subject to a 3-year lock-in period.'
+    },
+    {
+      question: 'Is it better to invest via SIP or a Lump Sum amount?',
+      answer: 'SIP is ideal for salaried individuals as it instills financial discipline and eliminates market timing risks. Lump sum investing works better when you have a large cash surplus and markets are reasonably priced.'
+    }
+  ],
+
+  detailedGuide: `Understanding the Power of Compounding in SIP Investments
+
+The primary force driving Systematic Investment Plans is the mathematical principle of compound interest—where your earnings generate their own earnings over extended time horizons.
+
+Why SIP is Superior for Long-Term Wealth Creation:
+1. Financial Discipline: Automating monthly contributions ensures continuous wealth accumulation regardless of market emotions or short-term noise.
+2. Rupee Cost Averaging: Eliminates the stressful need to "time the market." You buy more units when markets are down and fewer when markets are high.
+3. Compounding Acceleration: In the initial years of a SIP, capital accumulation seems slow. However, after 10 to 15 years, the exponential compounding curve kicks in, where annual returns often exceed the total annual capital deposited.
+
+Practical Example of Compounding:
+Investing $200/month at a 12% expected annual return over 10 years yields roughly $46,000 (with $24,000 invested). Extending that same $200/month investment for 20 years yields roughly $199,000 (with $48,000 invested). Doubling the duration quadruples the ultimate portfolio value thanks to compounding.`
+},
   'json-validator': {
     title: 'Free Online JSON Validator',
     introduction: `JSON (JavaScript Object Notation) is the most popular data format for API payloads, config files, and web services. A single missing quote or comma can break an entire application.
